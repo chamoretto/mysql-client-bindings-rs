@@ -1,0 +1,20 @@
+[package]
+name = "libmysqlclient-bindings"
+version = "0.1.0"
+edition = "2018"
+authors = ["George Chamor <chamor.work@gmail.com>"]
+description = "Auto-generated rust bindings for mysql server headers"
+licence = "MIT OR Apache-2.0"
+# repository = ""
+build = "build.rs"
+links = "mysql"
+
+
+[features]
+default = ["mysql"]
+mysql = []
+mariadb = []
+
+
+[build-dependencies]
+bindgen = "0.53.1"
