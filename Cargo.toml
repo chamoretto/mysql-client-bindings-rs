@@ -5,7 +5,9 @@ edition = "2018"
 authors = ["George Chamor <chamor.work@gmail.com>"]
 description = "Auto-generated rust bindings for mysql/mariadb client headers"
 licence = "MIT OR Apache-2.0"
-# repository = ""
+repository = "https://github.com/chamoretto/mysql-client-bindings-rs"
+homepage = "https://github.com/chamoretto/mysql-client-bindings-rs"
+readme = "README.md"
 build = "build.rs"
 links = "mysql"
 
