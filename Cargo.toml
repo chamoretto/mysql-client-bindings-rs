@@ -1,6 +1,6 @@
 [package]
 name = "mysql-client-bindings-rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2018"
 authors = ["George Chamor <chamor.work@gmail.com>"]
 description = "Auto-generated rust bindings for mysql/mariadb client headers"
