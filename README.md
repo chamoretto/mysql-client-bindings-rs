@@ -74,7 +74,7 @@ In order to generate standalone bindings through docker you need to:
 <ul style="list-style-type: none">
   <li> <b>+</b> More complete bindings, including more types, definitions, structs, and UDF support:
   ~7500 LoC with <b>mysql</b> and ~9700 LoC with <b>mariadb</b> 
-  against only mysql ~2700 LoC for <b>Windows</b> and ~1400 LoC for <b>MacOS</b> </li>
+  against only mysql ~2700 LoC for <b>Windows</b> and ~1400 LoC for <b>MacOS (identical with UNIX)</b> </li>
 
   <li> <b>-</b> Works&tested only on UNIX systems.</li>
 </ul>
