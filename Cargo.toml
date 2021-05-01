@@ -1,14 +1,17 @@
 [package]
-name = "libmysqlclient-bindings"
+name = "mysql-client-bindings-rs"
 version = "0.1.0"
 edition = "2018"
 authors = ["George Chamor <chamor.work@gmail.com>"]
-description = "Auto-generated rust bindings for mysql server headers"
+description = "Auto-generated rust bindings for mysql/mariadb client headers"
 licence = "MIT OR Apache-2.0"
 # repository = ""
 build = "build.rs"
 links = "mysql"
 
+[lib]
+name = "mysql_client_bindings_rs"
+path = "src/lib.rs"
 
 [features]
 default = ["mysql"]
