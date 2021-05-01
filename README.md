@@ -29,12 +29,32 @@ Any further contributions are welcome in order to
 
 ## Build
 
-In order to reproduce build of this library, you need only docker (path `#1`), or you need to install corresponding
-client libraries, depends on needed features.
+For build, you need to install corresponding client libraries,  
+depends on needed features (default path if you choose this crate as a dependency at your `Cargo.toml`), 
+or you need only docker (path `#2`) 
+if you want to build is locally by some reason or in order to reproduce these bindings.
 
-### #1 Docker
 
-In order to generate bindings through docker you need to:
+### #1 Build on host system
+
+In order to generate bindings on host you need to:
+
+1. Install bindgen dependencies
+   - `sudo apt-get update && sudo apt-get install llvm-dev libclang-dev clang`
+2. Install needed client libraries
+   - `mysql` - `sudo apt-get install libmysqlclient-dev`
+   - `mariadb` - `sudo apt-get install libmariadb3 libmariadb-dev`
+
+Then, if you want to just use this crate as a dependency, put in to your `Cargo.toml` and select `mysql` or `mariadb`
+as a feature.
+
+If you want to create standalone bindings:
+   - `mysql` - `cargo build --release` (`mysql` is default feature)
+   - `mariadb` - `cargo build --release --no-default-features --features mariadb`
+
+### #2 Docker
+
+In order to generate standalone bindings through docker you need to:
 
 1. Install docker
     - Ubuntu: `sudo apt-get update && sudo apt-get install docker.io`
@@ -47,19 +67,6 @@ In order to generate bindings through docker you need to:
 
 3. Run build script - it will rebuild both kind of bindings for you and store them at `./src` directory.
     - `bash ./build.sh`
-
-### #2 Build on host system
-
-In order to generate bindings on host you need to:
-
-1. Install bindgen dependencies
-    - `sudo apt-get update && sudo apt-get install llvm-dev libclang-dev clang`
-2. Install needed client libraries
-    - `mysql` - `sudo apt-get install libmysqlclient-dev`
-    - `mariadb` - `sudo apt-get install libmariadb3 libmariadb-dev`
-3. Run build
-    - `mysql` - `cargo build --release` (`mysql` is default feature)
-    - `mariadb` - `cargo build --release --no-default-features --features mariadb`
 
 
 ## Differences from [mysqlclient-sys](https://github.com/sgrif/mysqlclient-sys)
