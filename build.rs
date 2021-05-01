@@ -6,21 +6,18 @@ use std::path::PathBuf;
 #[cfg(all(feature = "mysql", not(feature = "mariadb")))]
 mod constants {
     pub(crate) const FILE_NAME: &str = "src/mysql.rs";
-    pub(crate) const LINK_LIB: &str = "mysqlclient";
     pub(crate) const BINDGEN_EXTRA_CLANG_ARGS: &str = r#"-I"/usr/include/mysql""#;
 }
 
 #[cfg(all(feature = "mariadb", not(feature = "mysql")))]
 mod constants {
     pub(crate) const FILE_NAME: &str = "src/mariadb.rs";
-    pub(crate) const LINK_LIB: &str = "mysqlclient";
-    // pub(crate) const LINK_LIB: &str = "mariadb";
     pub(crate) const BINDGEN_EXTRA_CLANG_ARGS: &str = r#"-I"/usr/include/mariadb""#;
 }
 
 fn main() {
     // Tell cargo to tell rustc to link the mysql or mariadb shared library.
-    println!("{}", format!("cargo:rustc-link-lib={}", constants::LINK_LIB));
+    println!("{}", format!("cargo:rustc-link-lib={}", "mysqlclient"));
 
     // Tell cargo to invalidate the built crate whenever the wrapper changes
     println!("cargo:rerun-if-changed=wrapper.h");
