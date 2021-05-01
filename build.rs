@@ -44,7 +44,6 @@ fn main() {
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
         // reformat bindings with rustfmt
         .rustfmt_bindings(true)
-        .blacklist_type()
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
