@@ -24,20 +24,14 @@ fn main() {
 
     println!("cargo:rerun-if-changed=build.rs");
 
-    std::env::set_var(
-        "BINDGEN_EXTRA_CLANG_ARGS",
-        constants::BINDGEN_EXTRA_CLANG_ARGS,
-    );
+    std::env::set_var("BINDGEN_EXTRA_CLANG_ARGS", constants::BINDGEN_EXTRA_CLANG_ARGS);
 
-    // The bindgen::Builder is the main entry point
-    // to bindgen, and lets you build up options for
-    // the resulting bindings.
+    // The bindgen::Builder is the main entry point to bindgen,
+    // and lets you build up options for the resulting bindings.
     let bindings = bindgen::Builder::default()
-        // The input header we would like to generate
-        // bindings for.
+        // The input header we would like to generate bindings for.
         .header("wrapper.h")
-        // Tell cargo to invalidate the built crate whenever any of the
-        // included header files changed.
+        // Tell cargo to invalidate the built crate whenever any of the included header files changed.
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
         // reformat bindings with rustfmt
         .rustfmt_bindings(true)
