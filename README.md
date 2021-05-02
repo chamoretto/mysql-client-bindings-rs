@@ -91,7 +91,7 @@ use mysql::{UDF_INIT, UDF_ARGS};  // whatever you need
 
 <ul style="list-style-type: none">
   <li> <b>+</b> More complete bindings, including more types, definitions, structs, and UDF support:
-  ~7500 LoC with <b>mysql</b> and ~9700 LoC with <b>mariadb</b> 
+  ~6500 LoC with <b>mysql</b> and ~9700 LoC (~8500 with line_width=120) with <b>mariadb</b> 
   against only mysql ~2700 LoC for <b>Windows</b> and ~1400 LoC for <b>MacOS (identical with UNIX)</b> </li>
 
   <li> <b>-</b> Works&tested only on UNIX systems.</li>

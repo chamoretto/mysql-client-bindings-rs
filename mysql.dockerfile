@@ -12,10 +12,11 @@ RUN set -eux; \
     rustc --version; \
     mkdir /$BUILD_DIR;
 
-COPY ./src         /$BUILD_DIR/src
-COPY ./build.rs    /$BUILD_DIR/
-COPY ./wrapper.h   /$BUILD_DIR/
-COPY ./Cargo.toml  /$BUILD_DIR/
+COPY ./src           /$BUILD_DIR/src
+COPY ./build.rs      /$BUILD_DIR/
+COPY ./wrapper.h     /$BUILD_DIR/
+COPY ./Cargo.toml    /$BUILD_DIR/
+COPY ./rustfmt.toml  /$BUILD_DIR/
 
 ARG VERSION_FEATURE_NAME
 RUN set -eux; \

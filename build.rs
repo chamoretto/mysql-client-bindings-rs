@@ -35,6 +35,7 @@ fn main() {
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
         // reformat bindings with rustfmt
         .rustfmt_bindings(true)
+        .rustfmt_configuration_file(Some("./rustfmt.toml".into()))
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.

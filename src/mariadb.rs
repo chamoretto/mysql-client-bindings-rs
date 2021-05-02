@@ -215,8 +215,7 @@ pub const MARIADB_PACKAGE_VERSION: &'static [u8; 6usize] = b"3.1.9\0";
 pub const MARIADB_PACKAGE_VERSION_ID: u32 = 30109;
 pub const MARIADB_SYSTEM_TYPE: &'static [u8; 6usize] = b"Linux\0";
 pub const MARIADB_MACHINE_TYPE: &'static [u8; 7usize] = b"x86_64\0";
-pub const MARIADB_PLUGINDIR: &'static [u8; 43usize] =
-    b"/usr/lib/x86_64-linux-gnu/mariadb19/plugin\0";
+pub const MARIADB_PLUGINDIR: &'static [u8; 43usize] = b"/usr/lib/x86_64-linux-gnu/mariadb19/plugin\0";
 pub const MYSQL_CHARSET: &'static [u8; 1usize] = b"\0";
 pub const CC_SOURCE_REVISION: &'static [u8; 1usize] = b"\0";
 pub const _CTYPE_H: u32 = 1;
@@ -299,12 +298,7 @@ fn bindgen_test_layout___fsid_t() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<__fsid_t>())).__val as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__fsid_t),
-            "::",
-            stringify!(__val)
-        )
+        concat!("Offset of field: ", stringify!(__fsid_t), "::", stringify!(__val))
     );
 }
 pub type __clock_t = ::std::os::raw::c_long;
@@ -388,12 +382,7 @@ fn bindgen_test_layout___sigset_t() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<__sigset_t>())).__val as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__sigset_t),
-            "::",
-            stringify!(__val)
-        )
+        concat!("Offset of field: ", stringify!(__sigset_t), "::", stringify!(__val))
     );
 }
 pub type sigset_t = __sigset_t;
@@ -418,22 +407,12 @@ fn bindgen_test_layout_timeval() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<timeval>())).tv_sec as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(timeval),
-            "::",
-            stringify!(tv_sec)
-        )
+        concat!("Offset of field: ", stringify!(timeval), "::", stringify!(tv_sec))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<timeval>())).tv_usec as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(timeval),
-            "::",
-            stringify!(tv_usec)
-        )
+        concat!("Offset of field: ", stringify!(timeval), "::", stringify!(tv_usec))
     );
 }
 #[repr(C)]
@@ -457,22 +436,12 @@ fn bindgen_test_layout_timespec() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<timespec>())).tv_sec as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(timespec),
-            "::",
-            stringify!(tv_sec)
-        )
+        concat!("Offset of field: ", stringify!(timespec), "::", stringify!(tv_sec))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<timespec>())).tv_nsec as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(timespec),
-            "::",
-            stringify!(tv_nsec)
-        )
+        concat!("Offset of field: ", stringify!(timespec), "::", stringify!(tv_nsec))
     );
 }
 pub type suseconds_t = __suseconds_t;
@@ -497,12 +466,7 @@ fn bindgen_test_layout_fd_set() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<fd_set>())).__fds_bits as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(fd_set),
-            "::",
-            stringify!(__fds_bits)
-        )
+        concat!("Offset of field: ", stringify!(fd_set), "::", stringify!(__fds_bits))
     );
 }
 pub type fd_mask = __fd_mask;
@@ -732,9 +696,7 @@ fn bindgen_test_layout___pthread_rwlock_arch_t() {
         concat!("Alignment of ", stringify!(__pthread_rwlock_arch_t))
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__readers as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__readers as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -744,9 +706,7 @@ fn bindgen_test_layout___pthread_rwlock_arch_t() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__writers as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__writers as *const _ as usize },
         4usize,
         concat!(
             "Offset of field: ",
@@ -756,9 +716,7 @@ fn bindgen_test_layout___pthread_rwlock_arch_t() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__wrphase_futex as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__wrphase_futex as *const _ as usize },
         8usize,
         concat!(
             "Offset of field: ",
@@ -768,9 +726,7 @@ fn bindgen_test_layout___pthread_rwlock_arch_t() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__writers_futex as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__writers_futex as *const _ as usize },
         12usize,
         concat!(
             "Offset of field: ",
@@ -800,9 +756,7 @@ fn bindgen_test_layout___pthread_rwlock_arch_t() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__cur_writer as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__cur_writer as *const _ as usize },
         24usize,
         concat!(
             "Offset of field: ",
@@ -812,9 +766,7 @@ fn bindgen_test_layout___pthread_rwlock_arch_t() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__shared as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__shared as *const _ as usize },
         28usize,
         concat!(
             "Offset of field: ",
@@ -824,9 +776,7 @@ fn bindgen_test_layout___pthread_rwlock_arch_t() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__rwelision as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_rwlock_arch_t>())).__rwelision as *const _ as usize },
         32usize,
         concat!(
             "Offset of field: ",
@@ -895,10 +845,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_1__bindgen_ty_1() {
     assert_eq!(
         ::std::mem::size_of::<__pthread_cond_s__bindgen_ty_1__bindgen_ty_1>(),
         8usize,
-        concat!(
-            "Size of: ",
-            stringify!(__pthread_cond_s__bindgen_ty_1__bindgen_ty_1)
-        )
+        concat!("Size of: ", stringify!(__pthread_cond_s__bindgen_ty_1__bindgen_ty_1))
     );
     assert_eq!(
         ::std::mem::align_of::<__pthread_cond_s__bindgen_ty_1__bindgen_ty_1>(),
@@ -909,10 +856,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_1__bindgen_ty_1() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_1__bindgen_ty_1>())).__low
-                as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_1__bindgen_ty_1>())).__low as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -922,10 +866,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_1__bindgen_ty_1() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_1__bindgen_ty_1>())).__high
-                as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_1__bindgen_ty_1>())).__high as *const _ as usize },
         4usize,
         concat!(
             "Offset of field: ",
@@ -948,9 +889,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_1() {
         concat!("Alignment of ", stringify!(__pthread_cond_s__bindgen_ty_1))
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_1>())).__wseq as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_1>())).__wseq as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -960,9 +899,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_1() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_1>())).__wseq32 as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_1>())).__wseq32 as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -990,10 +927,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_2__bindgen_ty_1() {
     assert_eq!(
         ::std::mem::size_of::<__pthread_cond_s__bindgen_ty_2__bindgen_ty_1>(),
         8usize,
-        concat!(
-            "Size of: ",
-            stringify!(__pthread_cond_s__bindgen_ty_2__bindgen_ty_1)
-        )
+        concat!("Size of: ", stringify!(__pthread_cond_s__bindgen_ty_2__bindgen_ty_1))
     );
     assert_eq!(
         ::std::mem::align_of::<__pthread_cond_s__bindgen_ty_2__bindgen_ty_1>(),
@@ -1004,10 +938,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_2__bindgen_ty_1() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_2__bindgen_ty_1>())).__low
-                as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_2__bindgen_ty_1>())).__low as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -1017,10 +948,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_2__bindgen_ty_1() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_2__bindgen_ty_1>())).__high
-                as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_2__bindgen_ty_1>())).__high as *const _ as usize },
         4usize,
         concat!(
             "Offset of field: ",
@@ -1043,10 +971,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_2() {
         concat!("Alignment of ", stringify!(__pthread_cond_s__bindgen_ty_2))
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_2>())).__g1_start as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_2>())).__g1_start as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -1056,10 +981,7 @@ fn bindgen_test_layout___pthread_cond_s__bindgen_ty_2() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_2>())).__g1_start32 as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<__pthread_cond_s__bindgen_ty_2>())).__g1_start32 as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -1635,112 +1557,57 @@ fn bindgen_test_layout_st_net() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).pvio as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(pvio)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(pvio))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).buff as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(buff)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(buff))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).buff_end as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(buff_end)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(buff_end))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).write_pos as *const _ as usize },
         24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(write_pos)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(write_pos))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).read_pos as *const _ as usize },
         32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(read_pos)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(read_pos))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).fd as *const _ as usize },
         40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(fd)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(fd))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).remain_in_buf as *const _ as usize },
         48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(remain_in_buf)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(remain_in_buf))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).length as *const _ as usize },
         56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(length)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(length))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).buf_length as *const _ as usize },
         64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(buf_length)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(buf_length))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).where_b as *const _ as usize },
         72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(where_b)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(where_b))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).max_packet as *const _ as usize },
         80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(max_packet)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(max_packet))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).max_packet_size as *const _ as usize },
@@ -1755,12 +1622,7 @@ fn bindgen_test_layout_st_net() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).pkt_nr as *const _ as usize },
         96usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(pkt_nr)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(pkt_nr))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).compress_pkt_nr as *const _ as usize },
@@ -1775,52 +1637,27 @@ fn bindgen_test_layout_st_net() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).write_timeout as *const _ as usize },
         104usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(write_timeout)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(write_timeout))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).read_timeout as *const _ as usize },
         108usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(read_timeout)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(read_timeout))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).retry_count as *const _ as usize },
         112usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(retry_count)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(retry_count))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).fcntl as *const _ as usize },
         116usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(fcntl)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(fcntl))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).return_status as *const _ as usize },
         120usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(return_status)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(return_status))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).reading_or_writing as *const _ as usize },
@@ -1835,132 +1672,67 @@ fn bindgen_test_layout_st_net() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).save_char as *const _ as usize },
         129usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(save_char)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(save_char))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).unused_1 as *const _ as usize },
         130usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(unused_1)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(unused_1))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).unused_2 as *const _ as usize },
         131usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(unused_2)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(unused_2))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).compress as *const _ as usize },
         132usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(compress)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(compress))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).unused_3 as *const _ as usize },
         133usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(unused_3)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(unused_3))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).unused_4 as *const _ as usize },
         136usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(unused_4)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(unused_4))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).last_errno as *const _ as usize },
         144usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(last_errno)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(last_errno))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).error as *const _ as usize },
         148usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(error)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(error))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).unused_5 as *const _ as usize },
         149usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(unused_5)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(unused_5))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).unused_6 as *const _ as usize },
         150usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(unused_6)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(unused_6))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).last_error as *const _ as usize },
         151usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(last_error)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(last_error))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).sqlstate as *const _ as usize },
         663usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(sqlstate)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(sqlstate))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_net>())).extension as *const _ as usize },
         672usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_net),
-            "::",
-            stringify!(extension)
-        )
+        concat!("Offset of field: ", stringify!(st_net), "::", stringify!(extension))
     );
 }
 pub type NET = st_net;
@@ -1971,8 +1743,7 @@ pub const enum_session_state_type_SESSION_TRACK_SYSTEM_VARIABLES: enum_session_s
 pub const enum_session_state_type_SESSION_TRACK_SCHEMA: enum_session_state_type = 1;
 pub const enum_session_state_type_SESSION_TRACK_STATE_CHANGE: enum_session_state_type = 2;
 pub const enum_session_state_type_SESSION_TRACK_GTIDS: enum_session_state_type = 3;
-pub const enum_session_state_type_SESSION_TRACK_TRANSACTION_CHARACTERISTICS:
-    enum_session_state_type = 4;
+pub const enum_session_state_type_SESSION_TRACK_TRANSACTION_CHARACTERISTICS: enum_session_state_type = 4;
 pub const enum_session_state_type_SESSION_TRACK_TRANSACTION_TYPE: enum_session_state_type = 5;
 pub type enum_session_state_type = u32;
 pub const enum_field_types_MYSQL_TYPE_DECIMAL: enum_field_types = 0;
@@ -2027,11 +1798,7 @@ extern "C" {
     pub fn ma_net_flush(net: *mut NET) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn ma_net_write(
-        net: *mut NET,
-        packet: *const ::std::os::raw::c_uchar,
-        len: size_t,
-    ) -> ::std::os::raw::c_int;
+    pub fn ma_net_write(net: *mut NET, packet: *const ::std::os::raw::c_uchar, len: size_t) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn ma_net_write_command(
@@ -2075,22 +1842,12 @@ fn bindgen_test_layout_rand_struct() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<rand_struct>())).seed1 as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(rand_struct),
-            "::",
-            stringify!(seed1)
-        )
+        concat!("Offset of field: ", stringify!(rand_struct), "::", stringify!(seed1))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<rand_struct>())).seed2 as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(rand_struct),
-            "::",
-            stringify!(seed2)
-        )
+        concat!("Offset of field: ", stringify!(rand_struct), "::", stringify!(seed2))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<rand_struct>())).max_value as *const _ as usize },
@@ -2153,32 +1910,17 @@ fn bindgen_test_layout_st_udf_args() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_udf_args>())).arg_type as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_udf_args),
-            "::",
-            stringify!(arg_type)
-        )
+        concat!("Offset of field: ", stringify!(st_udf_args), "::", stringify!(arg_type))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_udf_args>())).args as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_udf_args),
-            "::",
-            stringify!(args)
-        )
+        concat!("Offset of field: ", stringify!(st_udf_args), "::", stringify!(args))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_udf_args>())).lengths as *const _ as usize },
         24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_udf_args),
-            "::",
-            stringify!(lengths)
-        )
+        concat!("Offset of field: ", stringify!(st_udf_args), "::", stringify!(lengths))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_udf_args>())).maybe_null as *const _ as usize },
@@ -2226,12 +1968,7 @@ fn bindgen_test_layout_st_udf_init() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_udf_init>())).decimals as *const _ as usize },
         4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_udf_init),
-            "::",
-            stringify!(decimals)
-        )
+        concat!("Offset of field: ", stringify!(st_udf_init), "::", stringify!(decimals))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_udf_init>())).max_length as *const _ as usize },
@@ -2246,12 +1983,7 @@ fn bindgen_test_layout_st_udf_init() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_udf_init>())).ptr as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_udf_init),
-            "::",
-            stringify!(ptr)
-        )
+        concat!("Offset of field: ", stringify!(st_udf_init), "::", stringify!(ptr))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_udf_init>())).const_item as *const _ as usize },
@@ -2280,17 +2012,10 @@ extern "C" {
     );
 }
 extern "C" {
-    pub fn ma_hash_password(
-        result: *mut ::std::os::raw::c_ulong,
-        password: *const ::std::os::raw::c_char,
-        len: size_t,
-    );
+    pub fn ma_hash_password(result: *mut ::std::os::raw::c_ulong, password: *const ::std::os::raw::c_char, len: size_t);
 }
 extern "C" {
-    pub fn ma_make_scrambled_password(
-        to: *mut ::std::os::raw::c_char,
-        password: *const ::std::os::raw::c_char,
-    );
+    pub fn ma_make_scrambled_password(to: *mut ::std::os::raw::c_char, password: *const ::std::os::raw::c_char);
 }
 extern "C" {
     pub fn mariadb_load_defaults(
@@ -2328,40 +2053,22 @@ fn bindgen_test_layout_st_list() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_list>())).prev as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_list),
-            "::",
-            stringify!(prev)
-        )
+        concat!("Offset of field: ", stringify!(st_list), "::", stringify!(prev))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_list>())).next as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_list),
-            "::",
-            stringify!(next)
-        )
+        concat!("Offset of field: ", stringify!(st_list), "::", stringify!(next))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_list>())).data as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_list),
-            "::",
-            stringify!(data)
-        )
+        concat!("Offset of field: ", stringify!(st_list), "::", stringify!(data))
     );
 }
 pub type LIST = st_list;
 pub type list_walk_action = ::std::option::Option<
-    unsafe extern "C" fn(
-        arg1: *mut ::std::os::raw::c_void,
-        arg2: *mut ::std::os::raw::c_void,
-    ) -> ::std::os::raw::c_int,
+    unsafe extern "C" fn(arg1: *mut ::std::os::raw::c_void, arg2: *mut ::std::os::raw::c_void) -> ::std::os::raw::c_int,
 >;
 extern "C" {
     pub fn list_add(root: *mut LIST, element: *mut LIST) -> *mut LIST;
@@ -2598,9 +2305,7 @@ pub struct ma_charset_info_st {
     pub encoding: *const ::std::os::raw::c_char,
     pub char_minlen: ::std::os::raw::c_uint,
     pub char_maxlen: ::std::os::raw::c_uint,
-    pub mb_charlen: ::std::option::Option<
-        unsafe extern "C" fn(c: ::std::os::raw::c_uint) -> ::std::os::raw::c_uint,
-    >,
+    pub mb_charlen: ::std::option::Option<unsafe extern "C" fn(c: ::std::os::raw::c_uint) -> ::std::os::raw::c_uint>,
     pub mb_valid: ::std::option::Option<
         unsafe extern "C" fn(
             start: *const ::std::os::raw::c_char,
@@ -2754,9 +2459,7 @@ extern "C" {
     pub fn find_compiled_charset(cs_number: ::std::os::raw::c_uint) -> *mut MARIADB_CHARSET_INFO;
 }
 extern "C" {
-    pub fn find_compiled_charset_by_name(
-        name: *const ::std::os::raw::c_char,
-    ) -> *mut MARIADB_CHARSET_INFO;
+    pub fn find_compiled_charset_by_name(name: *const ::std::os::raw::c_char) -> *mut MARIADB_CHARSET_INFO;
 }
 extern "C" {
     pub fn mysql_cset_escape_quotes(
@@ -2839,32 +2542,17 @@ fn bindgen_test_layout_st_ma_used_mem() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_ma_used_mem>())).next as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_ma_used_mem),
-            "::",
-            stringify!(next)
-        )
+        concat!("Offset of field: ", stringify!(st_ma_used_mem), "::", stringify!(next))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_ma_used_mem>())).left as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_ma_used_mem),
-            "::",
-            stringify!(left)
-        )
+        concat!("Offset of field: ", stringify!(st_ma_used_mem), "::", stringify!(left))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_ma_used_mem>())).size as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_ma_used_mem),
-            "::",
-            stringify!(size)
-        )
+        concat!("Offset of field: ", stringify!(st_ma_used_mem), "::", stringify!(size))
     );
 }
 pub type MA_USED_MEM = st_ma_used_mem;
@@ -2895,22 +2583,12 @@ fn bindgen_test_layout_st_ma_mem_root() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_ma_mem_root>())).free as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_ma_mem_root),
-            "::",
-            stringify!(free)
-        )
+        concat!("Offset of field: ", stringify!(st_ma_mem_root), "::", stringify!(free))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_ma_mem_root>())).used as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_ma_mem_root),
-            "::",
-            stringify!(used)
-        )
+        concat!("Offset of field: ", stringify!(st_ma_mem_root), "::", stringify!(used))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_ma_mem_root>())).pre_alloc as *const _ as usize },
@@ -2953,9 +2631,7 @@ fn bindgen_test_layout_st_ma_mem_root() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_ma_mem_root>())).first_block_usage as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_ma_mem_root>())).first_block_usage as *const _ as usize },
         44usize,
         concat!(
             "Offset of field: ",
@@ -3025,12 +2701,7 @@ fn bindgen_test_layout_st_mysql_field() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).name as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_field),
-            "::",
-            stringify!(name)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_field), "::", stringify!(name))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).org_name as *const _ as usize },
@@ -3045,12 +2716,7 @@ fn bindgen_test_layout_st_mysql_field() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).table as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_field),
-            "::",
-            stringify!(table)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_field), "::", stringify!(table))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).org_table as *const _ as usize },
@@ -3065,12 +2731,7 @@ fn bindgen_test_layout_st_mysql_field() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).db as *const _ as usize },
         32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_field),
-            "::",
-            stringify!(db)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_field), "::", stringify!(db))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).catalog as *const _ as usize },
@@ -3085,12 +2746,7 @@ fn bindgen_test_layout_st_mysql_field() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).def as *const _ as usize },
         48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_field),
-            "::",
-            stringify!(def)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_field), "::", stringify!(def))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).length as *const _ as usize },
@@ -3185,12 +2841,7 @@ fn bindgen_test_layout_st_mysql_field() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).flags as *const _ as usize },
         100usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_field),
-            "::",
-            stringify!(flags)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_field), "::", stringify!(flags))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).decimals as *const _ as usize },
@@ -3215,12 +2866,7 @@ fn bindgen_test_layout_st_mysql_field() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).type_ as *const _ as usize },
         112usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_field),
-            "::",
-            stringify!(type_)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_field), "::", stringify!(type_))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_field>())).extension as *const _ as usize },
@@ -3261,32 +2907,17 @@ fn bindgen_test_layout_st_mysql_rows() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_rows>())).next as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_rows),
-            "::",
-            stringify!(next)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_rows), "::", stringify!(next))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_rows>())).data as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_rows),
-            "::",
-            stringify!(data)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_rows), "::", stringify!(data))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_rows>())).length as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_rows),
-            "::",
-            stringify!(length)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_rows), "::", stringify!(length))
     );
 }
 pub type MYSQL_ROWS = st_mysql_rows;
@@ -3316,12 +2947,7 @@ fn bindgen_test_layout_st_mysql_data() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_data>())).data as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_data),
-            "::",
-            stringify!(data)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_data), "::", stringify!(data))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_data>())).embedded_info as *const _ as usize },
@@ -3336,32 +2962,17 @@ fn bindgen_test_layout_st_mysql_data() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_data>())).alloc as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_data),
-            "::",
-            stringify!(alloc)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_data), "::", stringify!(alloc))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_data>())).rows as *const _ as usize },
         72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_data),
-            "::",
-            stringify!(rows)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_data), "::", stringify!(rows))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_data>())).fields as *const _ as usize },
         80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_data),
-            "::",
-            stringify!(fields)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_data), "::", stringify!(fields))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_data>())).extension as *const _ as usize },
@@ -3547,8 +3158,7 @@ pub struct st_mysql_options {
             arg3: ::std::os::raw::c_uint,
         ) -> ::std::os::raw::c_int,
     >,
-    pub local_infile_end:
-        ::std::option::Option<unsafe extern "C" fn(arg1: *mut ::std::os::raw::c_void)>,
+    pub local_infile_end: ::std::option::Option<unsafe extern "C" fn(arg1: *mut ::std::os::raw::c_void)>,
     pub local_infile_error: ::std::option::Option<
         unsafe extern "C" fn(
             arg1: *mut ::std::os::raw::c_void,
@@ -3572,9 +3182,7 @@ fn bindgen_test_layout_st_mysql_options() {
         concat!("Alignment of ", stringify!(st_mysql_options))
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).connect_timeout as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).connect_timeout as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -3676,12 +3284,7 @@ fn bindgen_test_layout_st_mysql_options() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_options>())).db as *const _ as usize },
         64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_options),
-            "::",
-            stringify!(db)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_options), "::", stringify!(db))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_options>())).init_command as *const _ as usize },
@@ -3784,10 +3387,7 @@ fn bindgen_test_layout_st_mysql_options() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).shared_memory_base_name as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).shared_memory_base_name as *const _ as usize },
         152usize,
         concat!(
             "Offset of field: ",
@@ -3797,9 +3397,7 @@ fn bindgen_test_layout_st_mysql_options() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).max_allowed_packet as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).max_allowed_packet as *const _ as usize },
         160usize,
         concat!(
             "Offset of field: ",
@@ -3909,9 +3507,7 @@ fn bindgen_test_layout_st_mysql_options() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).report_data_truncation as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).report_data_truncation as *const _ as usize },
         193usize,
         concat!(
             "Offset of field: ",
@@ -3921,9 +3517,7 @@ fn bindgen_test_layout_st_mysql_options() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).local_infile_init as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).local_infile_init as *const _ as usize },
         200usize,
         concat!(
             "Offset of field: ",
@@ -3933,9 +3527,7 @@ fn bindgen_test_layout_st_mysql_options() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).local_infile_read as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).local_infile_read as *const _ as usize },
         208usize,
         concat!(
             "Offset of field: ",
@@ -3945,9 +3537,7 @@ fn bindgen_test_layout_st_mysql_options() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).local_infile_end as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).local_infile_end as *const _ as usize },
         216usize,
         concat!(
             "Offset of field: ",
@@ -3957,9 +3547,7 @@ fn bindgen_test_layout_st_mysql_options() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).local_infile_error as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).local_infile_error as *const _ as usize },
         224usize,
         concat!(
             "Offset of field: ",
@@ -3969,9 +3557,7 @@ fn bindgen_test_layout_st_mysql_options() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_options>())).local_infile_userdata as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_options>())).local_infile_userdata as *const _ as usize },
         232usize,
         concat!(
             "Offset of field: ",
@@ -4052,62 +3638,32 @@ fn bindgen_test_layout_st_mysql() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).net as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(net)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(net))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unused_0 as *const _ as usize },
         680usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(unused_0)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(unused_0))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).host as *const _ as usize },
         688usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(host)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(host))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).user as *const _ as usize },
         696usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(user)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(user))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).passwd as *const _ as usize },
         704usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(passwd)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(passwd))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unix_socket as *const _ as usize },
         712usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(unix_socket)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(unix_socket))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).server_version as *const _ as usize },
@@ -4122,62 +3678,32 @@ fn bindgen_test_layout_st_mysql() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).host_info as *const _ as usize },
         728usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(host_info)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(host_info))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).info as *const _ as usize },
         736usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(info)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(info))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).db as *const _ as usize },
         744usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(db)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(db))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).charset as *const _ as usize },
         752usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(charset)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(charset))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).fields as *const _ as usize },
         760usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(fields)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(fields))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).field_alloc as *const _ as usize },
         768usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(field_alloc)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(field_alloc))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).affected_rows as *const _ as usize },
@@ -4192,32 +3718,17 @@ fn bindgen_test_layout_st_mysql() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).insert_id as *const _ as usize },
         832usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(insert_id)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(insert_id))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).extra_info as *const _ as usize },
         840usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(extra_info)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(extra_info))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).thread_id as *const _ as usize },
         848usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(thread_id)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(thread_id))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).packet_length as *const _ as usize },
@@ -4232,22 +3743,12 @@ fn bindgen_test_layout_st_mysql() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).port as *const _ as usize },
         864usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(port)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(port))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).client_flag as *const _ as usize },
         872usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(client_flag)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(client_flag))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).server_capabilities as *const _ as usize },
@@ -4272,12 +3773,7 @@ fn bindgen_test_layout_st_mysql() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).field_count as *const _ as usize },
         892usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(field_count)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(field_count))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).server_status as *const _ as usize },
@@ -4312,42 +3808,22 @@ fn bindgen_test_layout_st_mysql() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).options as *const _ as usize },
         912usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(options)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(options))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).status as *const _ as usize },
         1160usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(status)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(status))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).free_me as *const _ as usize },
         1164usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(free_me)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(free_me))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unused_1 as *const _ as usize },
         1165usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(unused_1)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(unused_1))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).scramble_buff as *const _ as usize },
@@ -4362,82 +3838,42 @@ fn bindgen_test_layout_st_mysql() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unused_2 as *const _ as usize },
         1187usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(unused_2)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(unused_2))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unused_3 as *const _ as usize },
         1192usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(unused_3)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(unused_3))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unused_4 as *const _ as usize },
         1200usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(unused_4)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(unused_4))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unused_5 as *const _ as usize },
         1208usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(unused_5)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(unused_5))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unused_6 as *const _ as usize },
         1216usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(unused_6)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(unused_6))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).stmts as *const _ as usize },
         1224usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(stmts)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(stmts))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).methods as *const _ as usize },
         1232usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(methods)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(methods))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).thd as *const _ as usize },
         1240usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(thd)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(thd))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).unbuffered_fetch_owner as *const _ as usize },
@@ -4452,22 +3888,12 @@ fn bindgen_test_layout_st_mysql() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).info_buffer as *const _ as usize },
         1256usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(info_buffer)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(info_buffer))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql>())).extension as *const _ as usize },
         1264usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql),
-            "::",
-            stringify!(extension)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql), "::", stringify!(extension))
     );
 }
 pub type MYSQL = st_mysql;
@@ -4533,22 +3959,12 @@ fn bindgen_test_layout_st_mysql_res() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).fields as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_res),
-            "::",
-            stringify!(fields)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_res), "::", stringify!(fields))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).data as *const _ as usize },
         24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_res),
-            "::",
-            stringify!(data)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_res), "::", stringify!(data))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).data_cursor as *const _ as usize },
@@ -4573,12 +3989,7 @@ fn bindgen_test_layout_st_mysql_res() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).row as *const _ as usize },
         96usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_res),
-            "::",
-            stringify!(row)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_res), "::", stringify!(row))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).current_row as *const _ as usize },
@@ -4593,42 +4004,22 @@ fn bindgen_test_layout_st_mysql_res() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).lengths as *const _ as usize },
         112usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_res),
-            "::",
-            stringify!(lengths)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_res), "::", stringify!(lengths))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).handle as *const _ as usize },
         120usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_res),
-            "::",
-            stringify!(handle)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_res), "::", stringify!(handle))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).eof as *const _ as usize },
         128usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_res),
-            "::",
-            stringify!(eof)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_res), "::", stringify!(eof))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_res>())).is_ps as *const _ as usize },
         129usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_res),
-            "::",
-            stringify!(is_ps)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_res), "::", stringify!(is_ps))
     );
 }
 pub type MYSQL_RES = st_mysql_res;
@@ -4652,9 +4043,7 @@ fn bindgen_test_layout_MYSQL_PARAMETERS() {
         concat!("Alignment of ", stringify!(MYSQL_PARAMETERS))
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<MYSQL_PARAMETERS>())).p_max_allowed_packet as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<MYSQL_PARAMETERS>())).p_max_allowed_packet as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -4664,9 +4053,7 @@ fn bindgen_test_layout_MYSQL_PARAMETERS() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<MYSQL_PARAMETERS>())).p_net_buffer_length as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<MYSQL_PARAMETERS>())).p_net_buffer_length as *const _ as usize },
         8usize,
         concat!(
             "Offset of field: ",
@@ -4730,62 +4117,32 @@ fn bindgen_test_layout_st_mysql_time() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).year as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_time),
-            "::",
-            stringify!(year)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_time), "::", stringify!(year))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).month as *const _ as usize },
         4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_time),
-            "::",
-            stringify!(month)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_time), "::", stringify!(month))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).day as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_time),
-            "::",
-            stringify!(day)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_time), "::", stringify!(day))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).hour as *const _ as usize },
         12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_time),
-            "::",
-            stringify!(hour)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_time), "::", stringify!(hour))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).minute as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_time),
-            "::",
-            stringify!(minute)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_time), "::", stringify!(minute))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).second as *const _ as usize },
         20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_time),
-            "::",
-            stringify!(second)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_time), "::", stringify!(second))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).second_part as *const _ as usize },
@@ -4800,12 +4157,7 @@ fn bindgen_test_layout_st_mysql_time() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).neg as *const _ as usize },
         32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_time),
-            "::",
-            stringify!(neg)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_time), "::", stringify!(neg))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_time>())).time_type as *const _ as usize },
@@ -4846,42 +4198,22 @@ fn bindgen_test_layout_character_set() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<character_set>())).number as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(character_set),
-            "::",
-            stringify!(number)
-        )
+        concat!("Offset of field: ", stringify!(character_set), "::", stringify!(number))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<character_set>())).state as *const _ as usize },
         4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(character_set),
-            "::",
-            stringify!(state)
-        )
+        concat!("Offset of field: ", stringify!(character_set), "::", stringify!(state))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<character_set>())).csname as *const _ as usize },
         8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(character_set),
-            "::",
-            stringify!(csname)
-        )
+        concat!("Offset of field: ", stringify!(character_set), "::", stringify!(csname))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<character_set>())).name as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(character_set),
-            "::",
-            stringify!(name)
-        )
+        concat!("Offset of field: ", stringify!(character_set), "::", stringify!(name))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<character_set>())).comment as *const _ as usize },
@@ -4896,12 +4228,7 @@ fn bindgen_test_layout_character_set() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<character_set>())).dir as *const _ as usize },
         32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(character_set),
-            "::",
-            stringify!(dir)
-        )
+        concat!("Offset of field: ", stringify!(character_set), "::", stringify!(dir))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<character_set>())).mbminlen as *const _ as usize },
@@ -4968,21 +4295,12 @@ pub struct st_mysql_bind {
     pub buffer: *mut ::std::os::raw::c_void,
     pub error: *mut my_bool,
     pub u: st_mysql_bind__bindgen_ty_1,
-    pub store_param_func:
-        ::std::option::Option<unsafe extern "C" fn(net: *mut NET, param: *mut st_mysql_bind)>,
+    pub store_param_func: ::std::option::Option<unsafe extern "C" fn(net: *mut NET, param: *mut st_mysql_bind)>,
     pub fetch_result: ::std::option::Option<
-        unsafe extern "C" fn(
-            arg1: *mut st_mysql_bind,
-            arg2: *mut MYSQL_FIELD,
-            row: *mut *mut ::std::os::raw::c_uchar,
-        ),
+        unsafe extern "C" fn(arg1: *mut st_mysql_bind, arg2: *mut MYSQL_FIELD, row: *mut *mut ::std::os::raw::c_uchar),
     >,
     pub skip_result: ::std::option::Option<
-        unsafe extern "C" fn(
-            arg1: *mut st_mysql_bind,
-            arg2: *mut MYSQL_FIELD,
-            row: *mut *mut ::std::os::raw::c_uchar,
-        ),
+        unsafe extern "C" fn(arg1: *mut st_mysql_bind, arg2: *mut MYSQL_FIELD, row: *mut *mut ::std::os::raw::c_uchar),
     >,
     pub buffer_length: ::std::os::raw::c_ulong,
     pub offset: ::std::os::raw::c_ulong,
@@ -5016,9 +4334,7 @@ fn bindgen_test_layout_st_mysql_bind__bindgen_ty_1() {
         concat!("Alignment of ", stringify!(st_mysql_bind__bindgen_ty_1))
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_bind__bindgen_ty_1>())).row_ptr as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_bind__bindgen_ty_1>())).row_ptr as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -5028,9 +4344,7 @@ fn bindgen_test_layout_st_mysql_bind__bindgen_ty_1() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_bind__bindgen_ty_1>())).indicator as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_bind__bindgen_ty_1>())).indicator as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -5055,12 +4369,7 @@ fn bindgen_test_layout_st_mysql_bind() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).length as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_bind),
-            "::",
-            stringify!(length)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_bind), "::", stringify!(length))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).is_null as *const _ as usize },
@@ -5075,32 +4384,17 @@ fn bindgen_test_layout_st_mysql_bind() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).buffer as *const _ as usize },
         16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_bind),
-            "::",
-            stringify!(buffer)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_bind), "::", stringify!(buffer))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).error as *const _ as usize },
         24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_bind),
-            "::",
-            stringify!(error)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_bind), "::", stringify!(error))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).u as *const _ as usize },
         32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_bind),
-            "::",
-            stringify!(u)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_bind), "::", stringify!(u))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).store_param_func as *const _ as usize },
@@ -5145,12 +4439,7 @@ fn bindgen_test_layout_st_mysql_bind() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).offset as *const _ as usize },
         72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_bind),
-            "::",
-            stringify!(offset)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_bind), "::", stringify!(offset))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).length_value as *const _ as usize },
@@ -5165,12 +4454,7 @@ fn bindgen_test_layout_st_mysql_bind() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).flags as *const _ as usize },
         88usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_bind),
-            "::",
-            stringify!(flags)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_bind), "::", stringify!(flags))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_bind>())).pack_length as *const _ as usize },
@@ -5265,9 +4549,7 @@ fn bindgen_test_layout_st_mysqlnd_upsert_result() {
         concat!("Alignment of ", stringify!(st_mysqlnd_upsert_result))
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_upsert_result>())).warning_count as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_upsert_result>())).warning_count as *const _ as usize },
         0usize,
         concat!(
             "Offset of field: ",
@@ -5277,9 +4559,7 @@ fn bindgen_test_layout_st_mysqlnd_upsert_result() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_upsert_result>())).server_status as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_upsert_result>())).server_status as *const _ as usize },
         4usize,
         concat!(
             "Offset of field: ",
@@ -5289,9 +4569,7 @@ fn bindgen_test_layout_st_mysqlnd_upsert_result() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_upsert_result>())).affected_rows as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_upsert_result>())).affected_rows as *const _ as usize },
         8usize,
         concat!(
             "Offset of field: ",
@@ -5301,9 +4579,7 @@ fn bindgen_test_layout_st_mysqlnd_upsert_result() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_upsert_result>())).last_insert_id as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_upsert_result>())).last_insert_id as *const _ as usize },
         16usize,
         concat!(
             "Offset of field: ",
@@ -5416,31 +4692,22 @@ pub struct st_mysqlnd_stmt_methods {
         ) -> my_bool,
     >,
     pub execute: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> my_bool>,
-    pub use_result:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
-    pub store_result:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
-    pub get_result:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
-    pub free_result:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> my_bool>,
+    pub use_result: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
+    pub store_result: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
+    pub get_result: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
+    pub free_result: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> my_bool>,
     pub seek_data: ::std::option::Option<
         unsafe extern "C" fn(stmt: *const MYSQL_STMT, row: ::std::os::raw::c_ulonglong) -> my_bool,
     >,
     pub reset: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> my_bool>,
     pub close: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> my_bool>,
     pub dtor: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> my_bool>,
-    pub fetch: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT, fetched_anything: *mut my_bool) -> my_bool,
-    >,
-    pub bind_param: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT, bind: MYSQL_BIND) -> my_bool,
-    >,
-    pub refresh_bind_param:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> my_bool>,
-    pub bind_result: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT, bind: *const MYSQL_BIND) -> my_bool,
-    >,
+    pub fetch:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT, fetched_anything: *mut my_bool) -> my_bool>,
+    pub bind_param: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT, bind: MYSQL_BIND) -> my_bool>,
+    pub refresh_bind_param: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> my_bool>,
+    pub bind_result:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT, bind: *const MYSQL_BIND) -> my_bool>,
     pub send_long_data: ::std::option::Option<
         unsafe extern "C" fn(
             stmt: *const MYSQL_STMT,
@@ -5449,37 +4716,23 @@ pub struct st_mysqlnd_stmt_methods {
             length: size_t,
         ) -> my_bool,
     >,
-    pub get_parameter_metadata:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
-    pub get_result_metadata:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
-    pub get_last_insert_id: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub get_affected_rows: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub get_num_rows: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub get_param_count: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_uint,
-    >,
-    pub get_field_count: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_uint,
-    >,
-    pub get_warning_count: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_uint,
-    >,
-    pub get_error_no: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_uint,
-    >,
-    pub get_error_str: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *const ::std::os::raw::c_char,
-    >,
-    pub get_sqlstate: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *const ::std::os::raw::c_char,
-    >,
+    pub get_parameter_metadata: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
+    pub get_result_metadata: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *mut MYSQL_RES>,
+    pub get_last_insert_id:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_ulonglong>,
+    pub get_affected_rows:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_ulonglong>,
+    pub get_num_rows:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_ulonglong>,
+    pub get_param_count: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_uint>,
+    pub get_field_count: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_uint>,
+    pub get_warning_count:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_uint>,
+    pub get_error_no: ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> ::std::os::raw::c_uint>,
+    pub get_error_str:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *const ::std::os::raw::c_char>,
+    pub get_sqlstate:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *const MYSQL_STMT) -> *const ::std::os::raw::c_char>,
     pub get_attribute: ::std::option::Option<
         unsafe extern "C" fn(
             stmt: *const MYSQL_STMT,
@@ -5537,9 +4790,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).use_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).use_result as *const _ as usize },
         16usize,
         concat!(
             "Offset of field: ",
@@ -5549,9 +4800,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).store_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).store_result as *const _ as usize },
         24usize,
         concat!(
             "Offset of field: ",
@@ -5561,9 +4810,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_result as *const _ as usize },
         32usize,
         concat!(
             "Offset of field: ",
@@ -5573,9 +4820,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).free_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).free_result as *const _ as usize },
         40usize,
         concat!(
             "Offset of field: ",
@@ -5585,9 +4830,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).seek_data as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).seek_data as *const _ as usize },
         48usize,
         concat!(
             "Offset of field: ",
@@ -5637,9 +4880,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).bind_param as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).bind_param as *const _ as usize },
         88usize,
         concat!(
             "Offset of field: ",
@@ -5649,10 +4890,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).refresh_bind_param as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).refresh_bind_param as *const _ as usize },
         96usize,
         concat!(
             "Offset of field: ",
@@ -5662,9 +4900,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).bind_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).bind_result as *const _ as usize },
         104usize,
         concat!(
             "Offset of field: ",
@@ -5674,9 +4910,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).send_long_data as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).send_long_data as *const _ as usize },
         112usize,
         concat!(
             "Offset of field: ",
@@ -5686,10 +4920,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_parameter_metadata as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_parameter_metadata as *const _ as usize },
         120usize,
         concat!(
             "Offset of field: ",
@@ -5699,10 +4930,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_result_metadata as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_result_metadata as *const _ as usize },
         128usize,
         concat!(
             "Offset of field: ",
@@ -5712,10 +4940,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_last_insert_id as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_last_insert_id as *const _ as usize },
         136usize,
         concat!(
             "Offset of field: ",
@@ -5725,10 +4950,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_affected_rows as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_affected_rows as *const _ as usize },
         144usize,
         concat!(
             "Offset of field: ",
@@ -5738,9 +4960,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_num_rows as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_num_rows as *const _ as usize },
         152usize,
         concat!(
             "Offset of field: ",
@@ -5750,9 +4970,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_param_count as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_param_count as *const _ as usize },
         160usize,
         concat!(
             "Offset of field: ",
@@ -5762,9 +4980,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_field_count as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_field_count as *const _ as usize },
         168usize,
         concat!(
             "Offset of field: ",
@@ -5774,10 +4990,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_warning_count as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_warning_count as *const _ as usize },
         176usize,
         concat!(
             "Offset of field: ",
@@ -5787,9 +5000,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_error_no as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_error_no as *const _ as usize },
         184usize,
         concat!(
             "Offset of field: ",
@@ -5799,9 +5010,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_error_str as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_error_str as *const _ as usize },
         192usize,
         concat!(
             "Offset of field: ",
@@ -5811,9 +5020,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_sqlstate as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_sqlstate as *const _ as usize },
         200usize,
         concat!(
             "Offset of field: ",
@@ -5823,9 +5030,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_attribute as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).get_attribute as *const _ as usize },
         208usize,
         concat!(
             "Offset of field: ",
@@ -5835,9 +5040,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).set_attribute as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).set_attribute as *const _ as usize },
         216usize,
         concat!(
             "Offset of field: ",
@@ -5847,9 +5050,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).set_error as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysqlnd_stmt_methods>())).set_error as *const _ as usize },
         224usize,
         concat!(
             "Offset of field: ",
@@ -5860,10 +5061,7 @@ fn bindgen_test_layout_st_mysqlnd_stmt_methods() {
     );
 }
 pub type mysql_stmt_fetch_row_func = ::std::option::Option<
-    unsafe extern "C" fn(
-        stmt: *mut MYSQL_STMT,
-        row: *mut *mut ::std::os::raw::c_uchar,
-    ) -> ::std::os::raw::c_int,
+    unsafe extern "C" fn(stmt: *mut MYSQL_STMT, row: *mut *mut ::std::os::raw::c_uchar) -> ::std::os::raw::c_int,
 >;
 pub type ps_result_callback = ::std::option::Option<
     unsafe extern "C" fn(
@@ -5942,12 +5140,7 @@ fn bindgen_test_layout_st_mysql_stmt() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).mysql as *const _ as usize },
         56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(mysql)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(mysql))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).stmt_id as *const _ as usize },
@@ -5962,32 +5155,17 @@ fn bindgen_test_layout_st_mysql_stmt() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).flags as *const _ as usize },
         72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(flags)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(flags))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).state as *const _ as usize },
         80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(state)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(state))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).fields as *const _ as usize },
         88usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(fields)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(fields))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).field_count as *const _ as usize },
@@ -6010,9 +5188,7 @@ fn bindgen_test_layout_st_mysql_stmt() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_stmt>())).send_types_to_server as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).send_types_to_server as *const _ as usize },
         104usize,
         concat!(
             "Offset of field: ",
@@ -6024,32 +5200,17 @@ fn bindgen_test_layout_st_mysql_stmt() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).params as *const _ as usize },
         112usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(params)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(params))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).bind as *const _ as usize },
         120usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(bind)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(bind))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).result as *const _ as usize },
         128usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(result)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(result))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).result_cursor as *const _ as usize },
@@ -6144,12 +5305,7 @@ fn bindgen_test_layout_st_mysql_stmt() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).list as *const _ as usize },
         800usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(list)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(list))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).cursor_exists as *const _ as usize },
@@ -6192,9 +5348,7 @@ fn bindgen_test_layout_st_mysql_stmt() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_stmt>())).default_rset_handler as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).default_rset_handler as *const _ as usize },
         856usize,
         concat!(
             "Offset of field: ",
@@ -6206,12 +5360,7 @@ fn bindgen_test_layout_st_mysql_stmt() {
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).m as *const _ as usize },
         864usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(st_mysql_stmt),
-            "::",
-            stringify!(m)
-        )
+        concat!("Offset of field: ", stringify!(st_mysql_stmt), "::", stringify!(m))
     );
     assert_eq!(
         unsafe { &(*(::std::ptr::null::<st_mysql_stmt>())).array_size as *const _ as usize },
@@ -6275,11 +5424,7 @@ fn bindgen_test_layout_st_mysql_stmt() {
     );
 }
 pub type ps_field_fetch_func = ::std::option::Option<
-    unsafe extern "C" fn(
-        r_param: *mut MYSQL_BIND,
-        field: *const MYSQL_FIELD,
-        row: *mut *mut ::std::os::raw::c_uchar,
-    ),
+    unsafe extern "C" fn(r_param: *mut MYSQL_BIND, field: *const MYSQL_FIELD, row: *mut *mut ::std::os::raw::c_uchar),
 >;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -6437,8 +5582,7 @@ extern "C" {
     pub fn mysql_stmt_sqlstate(stmt: *mut MYSQL_STMT) -> *const ::std::os::raw::c_char;
 }
 extern "C" {
-    pub fn mysql_stmt_row_seek(stmt: *mut MYSQL_STMT, offset: MYSQL_ROW_OFFSET)
-        -> MYSQL_ROW_OFFSET;
+    pub fn mysql_stmt_row_seek(stmt: *mut MYSQL_STMT, offset: MYSQL_ROW_OFFSET) -> MYSQL_ROW_OFFSET;
 }
 extern "C" {
     pub fn mysql_stmt_row_tell(stmt: *mut MYSQL_STMT) -> MYSQL_ROW_OFFSET;
@@ -6524,10 +5668,7 @@ fn bindgen_test_layout_st_mysql_client_plugin() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_client_plugin>())).interface_version as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_client_plugin>())).interface_version as *const _ as usize },
         4usize,
         concat!(
             "Offset of field: ",
@@ -6587,9 +5728,7 @@ fn bindgen_test_layout_st_mysql_client_plugin() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mysql_client_plugin>())).mariadb_api as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mysql_client_plugin>())).mariadb_api as *const _ as usize },
         56usize,
         concat!(
             "Offset of field: ",
@@ -6677,9 +5816,7 @@ extern "C" {
                 arg3: ::std::os::raw::c_uint,
             ) -> ::std::os::raw::c_int,
         >,
-        local_infile_end: ::std::option::Option<
-            unsafe extern "C" fn(arg1: *mut ::std::os::raw::c_void),
-        >,
+        local_infile_end: ::std::option::Option<unsafe extern "C" fn(arg1: *mut ::std::os::raw::c_void)>,
         local_infile_error: ::std::option::Option<
             unsafe extern "C" fn(
                 arg1: *mut ::std::os::raw::c_void,
@@ -6712,10 +5849,7 @@ extern "C" {
     pub fn mysql_eof(res: *mut MYSQL_RES) -> my_bool;
 }
 extern "C" {
-    pub fn mysql_fetch_field_direct(
-        res: *mut MYSQL_RES,
-        fieldnr: ::std::os::raw::c_uint,
-    ) -> *mut MYSQL_FIELD;
+    pub fn mysql_fetch_field_direct(res: *mut MYSQL_RES, fieldnr: ::std::os::raw::c_uint) -> *mut MYSQL_FIELD;
 }
 extern "C" {
     pub fn mysql_fetch_fields(res: *mut MYSQL_RES) -> *mut MYSQL_FIELD;
@@ -6769,25 +5903,14 @@ extern "C" {
     pub fn mysql_get_character_set_info(mysql: *mut MYSQL, cs: *mut MY_CHARSET_INFO);
 }
 extern "C" {
-    pub fn mysql_set_character_set(
-        mysql: *mut MYSQL,
-        csname: *const ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_set_character_set(mysql: *mut MYSQL, csname: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mariadb_get_infov(
-        mysql: *mut MYSQL,
-        value: mariadb_value,
-        arg: *mut ::std::os::raw::c_void,
-        ...
-    ) -> my_bool;
+    pub fn mariadb_get_infov(mysql: *mut MYSQL, value: mariadb_value, arg: *mut ::std::os::raw::c_void, ...)
+        -> my_bool;
 }
 extern "C" {
-    pub fn mariadb_get_info(
-        mysql: *mut MYSQL,
-        value: mariadb_value,
-        arg: *mut ::std::os::raw::c_void,
-    ) -> my_bool;
+    pub fn mariadb_get_info(mysql: *mut MYSQL, value: mariadb_value, arg: *mut ::std::os::raw::c_void) -> my_bool;
 }
 extern "C" {
     pub fn mysql_init(mysql: *mut MYSQL) -> *mut MYSQL;
@@ -6829,16 +5952,10 @@ extern "C" {
     pub fn mysql_close(sock: *mut MYSQL);
 }
 extern "C" {
-    pub fn mysql_select_db(
-        mysql: *mut MYSQL,
-        db: *const ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_select_db(mysql: *mut MYSQL, db: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_query(
-        mysql: *mut MYSQL,
-        q: *const ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_query(mysql: *mut MYSQL, q: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_send_query(
@@ -6858,19 +5975,13 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_shutdown(
-        mysql: *mut MYSQL,
-        shutdown_level: mysql_enum_shutdown_level,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_shutdown(mysql: *mut MYSQL, shutdown_level: mysql_enum_shutdown_level) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_dump_debug_info(mysql: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_refresh(
-        mysql: *mut MYSQL,
-        refresh_options: ::std::os::raw::c_uint,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_refresh(mysql: *mut MYSQL, refresh_options: ::std::os::raw::c_uint) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_kill(mysql: *mut MYSQL, pid: ::std::os::raw::c_ulong) -> ::std::os::raw::c_int;
@@ -6894,14 +6005,10 @@ extern "C" {
     pub fn mysql_get_proto_info(mysql: *mut MYSQL) -> ::std::os::raw::c_uint;
 }
 extern "C" {
-    pub fn mysql_list_dbs(mysql: *mut MYSQL, wild: *const ::std::os::raw::c_char)
-        -> *mut MYSQL_RES;
+    pub fn mysql_list_dbs(mysql: *mut MYSQL, wild: *const ::std::os::raw::c_char) -> *mut MYSQL_RES;
 }
 extern "C" {
-    pub fn mysql_list_tables(
-        mysql: *mut MYSQL,
-        wild: *const ::std::os::raw::c_char,
-    ) -> *mut MYSQL_RES;
+    pub fn mysql_list_tables(mysql: *mut MYSQL, wild: *const ::std::os::raw::c_char) -> *mut MYSQL_RES;
 }
 extern "C" {
     pub fn mysql_list_fields(
@@ -6944,10 +6051,7 @@ extern "C" {
     pub fn mysql_row_seek(result: *mut MYSQL_RES, arg1: MYSQL_ROW_OFFSET) -> MYSQL_ROW_OFFSET;
 }
 extern "C" {
-    pub fn mysql_field_seek(
-        result: *mut MYSQL_RES,
-        offset: MYSQL_FIELD_OFFSET,
-    ) -> MYSQL_FIELD_OFFSET;
+    pub fn mysql_field_seek(result: *mut MYSQL_RES, offset: MYSQL_FIELD_OFFSET) -> MYSQL_FIELD_OFFSET;
 }
 extern "C" {
     pub fn mysql_fetch_row(result: *mut MYSQL_RES) -> MYSQL_ROW;
@@ -6999,10 +6103,7 @@ extern "C" {
     pub fn mysql_thread_init() -> my_bool;
 }
 extern "C" {
-    pub fn mysql_set_server_option(
-        mysql: *mut MYSQL,
-        option: enum_mysql_set_option,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_set_server_option(mysql: *mut MYSQL, option: enum_mysql_set_option) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_get_client_info() -> *const ::std::os::raw::c_char;
@@ -7017,9 +6118,7 @@ extern "C" {
     pub fn mysql_get_server_name(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char;
 }
 extern "C" {
-    pub fn mariadb_get_charset_by_name(
-        csname: *const ::std::os::raw::c_char,
-    ) -> *mut MARIADB_CHARSET_INFO;
+    pub fn mariadb_get_charset_by_name(csname: *const ::std::os::raw::c_char) -> *mut MARIADB_CHARSET_INFO;
 }
 extern "C" {
     pub fn mariadb_get_charset_by_nr(csnr: ::std::os::raw::c_uint) -> *mut MARIADB_CHARSET_INFO;
@@ -7082,9 +6181,7 @@ extern "C" {
     pub fn mysql_net_read_packet(mysql: *mut MYSQL) -> ::std::os::raw::c_ulong;
 }
 extern "C" {
-    pub fn mysql_net_field_length(
-        packet: *mut *mut ::std::os::raw::c_uchar,
-    ) -> ::std::os::raw::c_ulong;
+    pub fn mysql_net_field_length(packet: *mut *mut ::std::os::raw::c_uchar) -> ::std::os::raw::c_ulong;
 }
 extern "C" {
     pub fn mysql_embedded() -> my_bool;
@@ -7096,10 +6193,7 @@ extern "C" {
     pub fn mysql_close_start(sock: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_close_cont(
-        sock: *mut MYSQL,
-        status: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_close_cont(sock: *mut MYSQL, status: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_commit_start(ret: *mut my_bool, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
@@ -7119,10 +6213,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_dump_debug_info_start(
-        ret: *mut ::std::os::raw::c_int,
-        mysql: *mut MYSQL,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_dump_debug_info_start(ret: *mut ::std::os::raw::c_int, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_rollback_start(ret: *mut my_bool, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
@@ -7135,11 +6226,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_autocommit_start(
-        ret: *mut my_bool,
-        mysql: *mut MYSQL,
-        auto_mode: my_bool,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_autocommit_start(ret: *mut my_bool, mysql: *mut MYSQL, auto_mode: my_bool) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_list_fields_cont(
@@ -7164,10 +6251,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_next_result_start(
-        ret: *mut ::std::os::raw::c_int,
-        mysql: *mut MYSQL,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_next_result_start(ret: *mut ::std::os::raw::c_int, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_next_result_cont(
@@ -7301,10 +6385,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_store_result_start(
-        ret: *mut *mut MYSQL_RES,
-        mysql: *mut MYSQL,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_store_result_start(ret: *mut *mut MYSQL_RES, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_store_result_cont(
@@ -7370,10 +6451,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_ping_start(
-        ret: *mut ::std::os::raw::c_int,
-        mysql: *mut MYSQL,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_ping_start(ret: *mut ::std::os::raw::c_int, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_ping_cont(
@@ -7383,10 +6461,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_stat_start(
-        ret: *mut *const ::std::os::raw::c_char,
-        mysql: *mut MYSQL,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_stat_start(ret: *mut *const ::std::os::raw::c_char, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_stat_cont(
@@ -7399,16 +6474,10 @@ extern "C" {
     pub fn mysql_free_result_start(result: *mut MYSQL_RES) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_free_result_cont(
-        result: *mut MYSQL_RES,
-        status: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_free_result_cont(result: *mut MYSQL_RES, status: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_fetch_row_start(
-        ret: *mut MYSQL_ROW,
-        result: *mut MYSQL_RES,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_fetch_row_start(ret: *mut MYSQL_ROW, result: *mut MYSQL_RES) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_fetch_row_cont(
@@ -7418,10 +6487,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_read_query_result_start(
-        ret: *mut my_bool,
-        mysql: *mut MYSQL,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_read_query_result_start(ret: *mut my_bool, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_read_query_result_cont(
@@ -7431,10 +6497,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_reset_connection_start(
-        ret: *mut ::std::os::raw::c_int,
-        mysql: *mut MYSQL,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_reset_connection_start(ret: *mut ::std::os::raw::c_int, mysql: *mut MYSQL) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_reset_connection_cont(
@@ -7475,10 +6538,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_stmt_execute_start(
-        ret: *mut ::std::os::raw::c_int,
-        stmt: *mut MYSQL_STMT,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_stmt_execute_start(ret: *mut ::std::os::raw::c_int, stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_stmt_execute_cont(
@@ -7488,10 +6548,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_stmt_fetch_start(
-        ret: *mut ::std::os::raw::c_int,
-        stmt: *mut MYSQL_STMT,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_stmt_fetch_start(ret: *mut ::std::os::raw::c_int, stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_stmt_fetch_cont(
@@ -7514,10 +6571,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_stmt_close_start(
-        ret: *mut my_bool,
-        stmt: *mut MYSQL_STMT,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_stmt_close_start(ret: *mut my_bool, stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_stmt_close_cont(
@@ -7527,10 +6581,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_stmt_reset_start(
-        ret: *mut my_bool,
-        stmt: *mut MYSQL_STMT,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_stmt_reset_start(ret: *mut my_bool, stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_stmt_reset_cont(
@@ -7540,10 +6591,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn mysql_stmt_free_result_start(
-        ret: *mut my_bool,
-        stmt: *mut MYSQL_STMT,
-    ) -> ::std::os::raw::c_int;
+    pub fn mysql_stmt_free_result_start(ret: *mut my_bool, stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn mysql_stmt_free_result_cont(
@@ -7574,75 +6622,40 @@ extern "C" {
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct st_mariadb_api {
-    pub mysql_num_rows: ::std::option::Option<
-        unsafe extern "C" fn(res: *mut MYSQL_RES) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub mysql_num_fields:
-        ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> ::std::os::raw::c_uint>,
+    pub mysql_num_rows: ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> ::std::os::raw::c_ulonglong>,
+    pub mysql_num_fields: ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> ::std::os::raw::c_uint>,
     pub mysql_eof: ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> my_bool>,
     pub mysql_fetch_field_direct: ::std::option::Option<
-        unsafe extern "C" fn(
-            res: *mut MYSQL_RES,
-            fieldnr: ::std::os::raw::c_uint,
-        ) -> *mut MYSQL_FIELD,
+        unsafe extern "C" fn(res: *mut MYSQL_RES, fieldnr: ::std::os::raw::c_uint) -> *mut MYSQL_FIELD,
     >,
-    pub mysql_fetch_fields:
-        ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> *mut MYSQL_FIELD>,
-    pub mysql_row_tell:
-        ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> *mut MYSQL_ROWS>,
-    pub mysql_field_tell:
-        ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> ::std::os::raw::c_uint>,
-    pub mysql_field_count:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_uint>,
-    pub mysql_more_results:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
-    pub mysql_next_result:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
-    pub mysql_affected_rows: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub mysql_autocommit:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL, mode: my_bool) -> my_bool>,
+    pub mysql_fetch_fields: ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> *mut MYSQL_FIELD>,
+    pub mysql_row_tell: ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> *mut MYSQL_ROWS>,
+    pub mysql_field_tell: ::std::option::Option<unsafe extern "C" fn(res: *mut MYSQL_RES) -> ::std::os::raw::c_uint>,
+    pub mysql_field_count: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_uint>,
+    pub mysql_more_results: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
+    pub mysql_next_result: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
+    pub mysql_affected_rows:
+        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_ulonglong>,
+    pub mysql_autocommit: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL, mode: my_bool) -> my_bool>,
     pub mysql_commit: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
     pub mysql_rollback: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
-    pub mysql_insert_id: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub mysql_errno:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_uint>,
-    pub mysql_error: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char,
-    >,
-    pub mysql_info: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char,
-    >,
-    pub mysql_thread_id:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_ulong>,
-    pub mysql_character_set_name: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char,
-    >,
+    pub mysql_insert_id: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_ulonglong>,
+    pub mysql_errno: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_uint>,
+    pub mysql_error: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char>,
+    pub mysql_info: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char>,
+    pub mysql_thread_id: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_ulong>,
+    pub mysql_character_set_name:
+        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char>,
     pub mysql_get_character_set_info:
         ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL, cs: *mut MY_CHARSET_INFO)>,
     pub mysql_set_character_set: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            csname: *const ::std::os::raw::c_char,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(mysql: *mut MYSQL, csname: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int,
     >,
     pub mariadb_get_infov: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            value: mariadb_value,
-            arg: *mut ::std::os::raw::c_void,
-            ...
-        ) -> my_bool,
+        unsafe extern "C" fn(mysql: *mut MYSQL, value: mariadb_value, arg: *mut ::std::os::raw::c_void, ...) -> my_bool,
     >,
     pub mariadb_get_info: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            value: mariadb_value,
-            arg: *mut ::std::os::raw::c_void,
-        ) -> my_bool,
+        unsafe extern "C" fn(mysql: *mut MYSQL, value: mariadb_value, arg: *mut ::std::os::raw::c_void) -> my_bool,
     >,
     pub mysql_init: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL>,
     pub mysql_ssl_set: ::std::option::Option<
@@ -7655,9 +6668,8 @@ pub struct st_mariadb_api {
             cipher: *const ::std::os::raw::c_char,
         ) -> ::std::os::raw::c_int,
     >,
-    pub mysql_get_ssl_cipher: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char,
-    >,
+    pub mysql_get_ssl_cipher:
+        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char>,
     pub mysql_change_user: ::std::option::Option<
         unsafe extern "C" fn(
             mysql: *mut MYSQL,
@@ -7680,16 +6692,10 @@ pub struct st_mariadb_api {
     >,
     pub mysql_close: ::std::option::Option<unsafe extern "C" fn(sock: *mut MYSQL)>,
     pub mysql_select_db: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            db: *const ::std::os::raw::c_char,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(mysql: *mut MYSQL, db: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int,
     >,
     pub mysql_query: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            q: *const ::std::os::raw::c_char,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(mysql: *mut MYSQL, q: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int,
     >,
     pub mysql_send_query: ::std::option::Option<
         unsafe extern "C" fn(
@@ -7698,8 +6704,7 @@ pub struct st_mariadb_api {
             length: ::std::os::raw::c_ulong,
         ) -> ::std::os::raw::c_int,
     >,
-    pub mysql_read_query_result:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
+    pub mysql_read_query_result: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
     pub mysql_real_query: ::std::option::Option<
         unsafe extern "C" fn(
             mysql: *mut MYSQL,
@@ -7708,51 +6713,29 @@ pub struct st_mariadb_api {
         ) -> ::std::os::raw::c_int,
     >,
     pub mysql_shutdown: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            shutdown_level: mysql_enum_shutdown_level,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(mysql: *mut MYSQL, shutdown_level: mysql_enum_shutdown_level) -> ::std::os::raw::c_int,
     >,
-    pub mysql_dump_debug_info:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
+    pub mysql_dump_debug_info: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
     pub mysql_refresh: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            refresh_options: ::std::os::raw::c_uint,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(mysql: *mut MYSQL, refresh_options: ::std::os::raw::c_uint) -> ::std::os::raw::c_int,
     >,
     pub mysql_kill: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            pid: ::std::os::raw::c_ulong,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(mysql: *mut MYSQL, pid: ::std::os::raw::c_ulong) -> ::std::os::raw::c_int,
     >,
-    pub mysql_ping:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
-    pub mysql_stat: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut ::std::os::raw::c_char,
-    >,
-    pub mysql_get_server_info: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut ::std::os::raw::c_char,
-    >,
+    pub mysql_ping: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
+    pub mysql_stat: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut ::std::os::raw::c_char>,
+    pub mysql_get_server_info:
+        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut ::std::os::raw::c_char>,
     pub mysql_get_server_version:
         ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_ulong>,
-    pub mysql_get_host_info: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut ::std::os::raw::c_char,
-    >,
-    pub mysql_get_proto_info:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_uint>,
+    pub mysql_get_host_info:
+        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut ::std::os::raw::c_char>,
+    pub mysql_get_proto_info: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_uint>,
     pub mysql_list_dbs: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            wild: *const ::std::os::raw::c_char,
-        ) -> *mut MYSQL_RES,
+        unsafe extern "C" fn(mysql: *mut MYSQL, wild: *const ::std::os::raw::c_char) -> *mut MYSQL_RES,
     >,
     pub mysql_list_tables: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            wild: *const ::std::os::raw::c_char,
-        ) -> *mut MYSQL_RES,
+        unsafe extern "C" fn(mysql: *mut MYSQL, wild: *const ::std::os::raw::c_char) -> *mut MYSQL_RES,
     >,
     pub mysql_list_fields: ::std::option::Option<
         unsafe extern "C" fn(
@@ -7761,12 +6744,9 @@ pub struct st_mariadb_api {
             wild: *const ::std::os::raw::c_char,
         ) -> *mut MYSQL_RES,
     >,
-    pub mysql_list_processes:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL_RES>,
-    pub mysql_store_result:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL_RES>,
-    pub mysql_use_result:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL_RES>,
+    pub mysql_list_processes: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL_RES>,
+    pub mysql_store_result: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL_RES>,
+    pub mysql_use_result: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL_RES>,
     pub mysql_options: ::std::option::Option<
         unsafe extern "C" fn(
             mysql: *mut MYSQL,
@@ -7775,25 +6755,17 @@ pub struct st_mariadb_api {
         ) -> ::std::os::raw::c_int,
     >,
     pub mysql_free_result: ::std::option::Option<unsafe extern "C" fn(result: *mut MYSQL_RES)>,
-    pub mysql_data_seek: ::std::option::Option<
-        unsafe extern "C" fn(result: *mut MYSQL_RES, offset: ::std::os::raw::c_ulonglong),
-    >,
-    pub mysql_row_seek: ::std::option::Option<
-        unsafe extern "C" fn(result: *mut MYSQL_RES, arg1: MYSQL_ROW_OFFSET) -> MYSQL_ROW_OFFSET,
-    >,
+    pub mysql_data_seek:
+        ::std::option::Option<unsafe extern "C" fn(result: *mut MYSQL_RES, offset: ::std::os::raw::c_ulonglong)>,
+    pub mysql_row_seek:
+        ::std::option::Option<unsafe extern "C" fn(result: *mut MYSQL_RES, arg1: MYSQL_ROW_OFFSET) -> MYSQL_ROW_OFFSET>,
     pub mysql_field_seek: ::std::option::Option<
-        unsafe extern "C" fn(
-            result: *mut MYSQL_RES,
-            offset: MYSQL_FIELD_OFFSET,
-        ) -> MYSQL_FIELD_OFFSET,
+        unsafe extern "C" fn(result: *mut MYSQL_RES, offset: MYSQL_FIELD_OFFSET) -> MYSQL_FIELD_OFFSET,
     >,
-    pub mysql_fetch_row:
-        ::std::option::Option<unsafe extern "C" fn(result: *mut MYSQL_RES) -> MYSQL_ROW>,
-    pub mysql_fetch_lengths: ::std::option::Option<
-        unsafe extern "C" fn(result: *mut MYSQL_RES) -> *mut ::std::os::raw::c_ulong,
-    >,
-    pub mysql_fetch_field:
-        ::std::option::Option<unsafe extern "C" fn(result: *mut MYSQL_RES) -> *mut MYSQL_FIELD>,
+    pub mysql_fetch_row: ::std::option::Option<unsafe extern "C" fn(result: *mut MYSQL_RES) -> MYSQL_ROW>,
+    pub mysql_fetch_lengths:
+        ::std::option::Option<unsafe extern "C" fn(result: *mut MYSQL_RES) -> *mut ::std::os::raw::c_ulong>,
+    pub mysql_fetch_field: ::std::option::Option<unsafe extern "C" fn(result: *mut MYSQL_RES) -> *mut MYSQL_FIELD>,
     pub mysql_escape_string: ::std::option::Option<
         unsafe extern "C" fn(
             to: *mut ::std::os::raw::c_char,
@@ -7810,11 +6782,8 @@ pub struct st_mariadb_api {
         ) -> ::std::os::raw::c_ulong,
     >,
     pub mysql_thread_safe: ::std::option::Option<unsafe extern "C" fn() -> ::std::os::raw::c_uint>,
-    pub mysql_warning_count:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_uint>,
-    pub mysql_sqlstate: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char,
-    >,
+    pub mysql_warning_count: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_uint>,
+    pub mysql_sqlstate: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char>,
     pub mysql_server_init: ::std::option::Option<
         unsafe extern "C" fn(
             argc: ::std::os::raw::c_int,
@@ -7826,26 +6795,17 @@ pub struct st_mariadb_api {
     pub mysql_thread_end: ::std::option::Option<unsafe extern "C" fn()>,
     pub mysql_thread_init: ::std::option::Option<unsafe extern "C" fn() -> my_bool>,
     pub mysql_set_server_option: ::std::option::Option<
-        unsafe extern "C" fn(
-            mysql: *mut MYSQL,
-            option: enum_mysql_set_option,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(mysql: *mut MYSQL, option: enum_mysql_set_option) -> ::std::os::raw::c_int,
     >,
-    pub mysql_get_client_info:
-        ::std::option::Option<unsafe extern "C" fn() -> *const ::std::os::raw::c_char>,
-    pub mysql_get_client_version:
-        ::std::option::Option<unsafe extern "C" fn() -> ::std::os::raw::c_ulong>,
-    pub mariadb_connection:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
-    pub mysql_get_server_name: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char,
-    >,
-    pub mariadb_get_charset_by_name: ::std::option::Option<
-        unsafe extern "C" fn(csname: *const ::std::os::raw::c_char) -> *mut MARIADB_CHARSET_INFO,
-    >,
-    pub mariadb_get_charset_by_nr: ::std::option::Option<
-        unsafe extern "C" fn(csnr: ::std::os::raw::c_uint) -> *mut MARIADB_CHARSET_INFO,
-    >,
+    pub mysql_get_client_info: ::std::option::Option<unsafe extern "C" fn() -> *const ::std::os::raw::c_char>,
+    pub mysql_get_client_version: ::std::option::Option<unsafe extern "C" fn() -> ::std::os::raw::c_ulong>,
+    pub mariadb_connection: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
+    pub mysql_get_server_name:
+        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *const ::std::os::raw::c_char>,
+    pub mariadb_get_charset_by_name:
+        ::std::option::Option<unsafe extern "C" fn(csname: *const ::std::os::raw::c_char) -> *mut MARIADB_CHARSET_INFO>,
+    pub mariadb_get_charset_by_nr:
+        ::std::option::Option<unsafe extern "C" fn(csnr: ::std::os::raw::c_uint) -> *mut MARIADB_CHARSET_INFO>,
     pub mariadb_convert_string: ::std::option::Option<
         unsafe extern "C" fn(
             from: *const ::std::os::raw::c_char,
@@ -7882,16 +6842,13 @@ pub struct st_mariadb_api {
             len: ::std::os::raw::c_ulong,
         ) -> ::std::os::raw::c_ulong,
     >,
-    pub mysql_get_socket:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_socket>,
+    pub mysql_get_socket: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_socket>,
     pub mysql_get_timeout_value:
         ::std::option::Option<unsafe extern "C" fn(mysql: *const MYSQL) -> ::std::os::raw::c_uint>,
     pub mysql_get_timeout_value_ms:
         ::std::option::Option<unsafe extern "C" fn(mysql: *const MYSQL) -> ::std::os::raw::c_uint>,
-    pub mariadb_reconnect:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
-    pub mysql_stmt_init:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL_STMT>,
+    pub mariadb_reconnect: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> my_bool>,
+    pub mysql_stmt_init: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> *mut MYSQL_STMT>,
     pub mysql_stmt_prepare: ::std::option::Option<
         unsafe extern "C" fn(
             stmt: *mut MYSQL_STMT,
@@ -7899,10 +6856,8 @@ pub struct st_mariadb_api {
             length: ::std::os::raw::c_ulong,
         ) -> ::std::os::raw::c_int,
     >,
-    pub mysql_stmt_execute:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int>,
-    pub mysql_stmt_fetch:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int>,
+    pub mysql_stmt_execute: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int>,
+    pub mysql_stmt_fetch: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int>,
     pub mysql_stmt_fetch_column: ::std::option::Option<
         unsafe extern "C" fn(
             stmt: *mut MYSQL_STMT,
@@ -7913,9 +6868,8 @@ pub struct st_mariadb_api {
     >,
     pub mysql_stmt_store_result:
         ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int>,
-    pub mysql_stmt_param_count: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_ulong,
-    >,
+    pub mysql_stmt_param_count:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_ulong>,
     pub mysql_stmt_attr_set: ::std::option::Option<
         unsafe extern "C" fn(
             stmt: *mut MYSQL_STMT,
@@ -7930,18 +6884,13 @@ pub struct st_mariadb_api {
             attr: *mut ::std::os::raw::c_void,
         ) -> my_bool,
     >,
-    pub mysql_stmt_bind_param: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT, bnd: *mut MYSQL_BIND) -> my_bool,
-    >,
-    pub mysql_stmt_bind_result: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT, bnd: *mut MYSQL_BIND) -> my_bool,
-    >,
-    pub mysql_stmt_close:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
-    pub mysql_stmt_reset:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
-    pub mysql_stmt_free_result:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
+    pub mysql_stmt_bind_param:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT, bnd: *mut MYSQL_BIND) -> my_bool>,
+    pub mysql_stmt_bind_result:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT, bnd: *mut MYSQL_BIND) -> my_bool>,
+    pub mysql_stmt_close: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
+    pub mysql_stmt_reset: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
+    pub mysql_stmt_free_result: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
     pub mysql_stmt_send_long_data: ::std::option::Option<
         unsafe extern "C" fn(
             stmt: *mut MYSQL_STMT,
@@ -7952,41 +6901,29 @@ pub struct st_mariadb_api {
     >,
     pub mysql_stmt_result_metadata:
         ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> *mut MYSQL_RES>,
-    pub mysql_stmt_param_metadata:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> *mut MYSQL_RES>,
-    pub mysql_stmt_errno: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_uint,
-    >,
-    pub mysql_stmt_error: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> *const ::std::os::raw::c_char,
-    >,
-    pub mysql_stmt_sqlstate: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> *const ::std::os::raw::c_char,
-    >,
+    pub mysql_stmt_param_metadata: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> *mut MYSQL_RES>,
+    pub mysql_stmt_errno: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_uint>,
+    pub mysql_stmt_error:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> *const ::std::os::raw::c_char>,
+    pub mysql_stmt_sqlstate:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> *const ::std::os::raw::c_char>,
     pub mysql_stmt_row_seek: ::std::option::Option<
         unsafe extern "C" fn(stmt: *mut MYSQL_STMT, offset: MYSQL_ROW_OFFSET) -> MYSQL_ROW_OFFSET,
     >,
-    pub mysql_stmt_row_tell:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> MYSQL_ROW_OFFSET>,
-    pub mysql_stmt_data_seek: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT, offset: ::std::os::raw::c_ulonglong),
-    >,
-    pub mysql_stmt_num_rows: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub mysql_stmt_affected_rows: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub mysql_stmt_insert_id: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_ulonglong,
-    >,
-    pub mysql_stmt_field_count: ::std::option::Option<
-        unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_uint,
-    >,
+    pub mysql_stmt_row_tell: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> MYSQL_ROW_OFFSET>,
+    pub mysql_stmt_data_seek:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT, offset: ::std::os::raw::c_ulonglong)>,
+    pub mysql_stmt_num_rows:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_ulonglong>,
+    pub mysql_stmt_affected_rows:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_ulonglong>,
+    pub mysql_stmt_insert_id:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_ulonglong>,
+    pub mysql_stmt_field_count:
+        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_uint>,
     pub mysql_stmt_next_result:
         ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int>,
-    pub mysql_stmt_more_results:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
+    pub mysql_stmt_more_results: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
     pub mariadb_stmt_execute_direct: ::std::option::Option<
         unsafe extern "C" fn(
             stmt: *mut MYSQL_STMT,
@@ -7994,8 +6931,7 @@ pub struct st_mariadb_api {
             length: size_t,
         ) -> ::std::os::raw::c_int,
     >,
-    pub mysql_reset_connection:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
+    pub mysql_reset_connection: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
 }
 #[test]
 fn bindgen_test_layout_st_mariadb_api() {
@@ -8040,9 +6976,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_fetch_field_direct as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_fetch_field_direct as *const _ as usize },
         24usize,
         concat!(
             "Offset of field: ",
@@ -8052,9 +6986,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_fetch_fields as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_fetch_fields as *const _ as usize },
         32usize,
         concat!(
             "Offset of field: ",
@@ -8084,9 +7016,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_field_count as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_field_count as *const _ as usize },
         56usize,
         concat!(
             "Offset of field: ",
@@ -8096,9 +7026,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_more_results as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_more_results as *const _ as usize },
         64usize,
         concat!(
             "Offset of field: ",
@@ -8108,9 +7036,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_next_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_next_result as *const _ as usize },
         72usize,
         concat!(
             "Offset of field: ",
@@ -8120,9 +7046,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_affected_rows as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_affected_rows as *const _ as usize },
         80usize,
         concat!(
             "Offset of field: ",
@@ -8212,9 +7136,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_character_set_name as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_character_set_name as *const _ as usize },
         152usize,
         concat!(
             "Offset of field: ",
@@ -8224,10 +7146,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_character_set_info as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_character_set_info as *const _ as usize },
         160usize,
         concat!(
             "Offset of field: ",
@@ -8237,9 +7156,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_set_character_set as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_set_character_set as *const _ as usize },
         168usize,
         concat!(
             "Offset of field: ",
@@ -8249,9 +7166,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_get_infov as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_get_infov as *const _ as usize },
         176usize,
         concat!(
             "Offset of field: ",
@@ -8291,9 +7206,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_ssl_cipher as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_ssl_cipher as *const _ as usize },
         208usize,
         concat!(
             "Offset of field: ",
@@ -8303,9 +7216,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_change_user as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_change_user as *const _ as usize },
         216usize,
         concat!(
             "Offset of field: ",
@@ -8315,9 +7226,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_real_connect as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_real_connect as *const _ as usize },
         224usize,
         concat!(
             "Offset of field: ",
@@ -8367,9 +7276,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_read_query_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_read_query_result as *const _ as usize },
         264usize,
         concat!(
             "Offset of field: ",
@@ -8399,9 +7306,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_dump_debug_info as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_dump_debug_info as *const _ as usize },
         288usize,
         concat!(
             "Offset of field: ",
@@ -8451,9 +7356,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_server_info as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_server_info as *const _ as usize },
         328usize,
         concat!(
             "Offset of field: ",
@@ -8463,9 +7366,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_server_version as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_server_version as *const _ as usize },
         336usize,
         concat!(
             "Offset of field: ",
@@ -8475,9 +7376,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_host_info as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_host_info as *const _ as usize },
         344usize,
         concat!(
             "Offset of field: ",
@@ -8487,9 +7386,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_proto_info as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_proto_info as *const _ as usize },
         352usize,
         concat!(
             "Offset of field: ",
@@ -8509,9 +7406,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_list_tables as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_list_tables as *const _ as usize },
         368usize,
         concat!(
             "Offset of field: ",
@@ -8521,9 +7416,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_list_fields as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_list_fields as *const _ as usize },
         376usize,
         concat!(
             "Offset of field: ",
@@ -8533,9 +7426,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_list_processes as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_list_processes as *const _ as usize },
         384usize,
         concat!(
             "Offset of field: ",
@@ -8545,9 +7436,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_store_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_store_result as *const _ as usize },
         392usize,
         concat!(
             "Offset of field: ",
@@ -8577,9 +7466,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_free_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_free_result as *const _ as usize },
         416usize,
         concat!(
             "Offset of field: ",
@@ -8629,9 +7516,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_fetch_lengths as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_fetch_lengths as *const _ as usize },
         456usize,
         concat!(
             "Offset of field: ",
@@ -8641,9 +7526,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_fetch_field as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_fetch_field as *const _ as usize },
         464usize,
         concat!(
             "Offset of field: ",
@@ -8653,9 +7536,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_escape_string as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_escape_string as *const _ as usize },
         472usize,
         concat!(
             "Offset of field: ",
@@ -8665,9 +7546,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_real_escape_string as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_real_escape_string as *const _ as usize },
         480usize,
         concat!(
             "Offset of field: ",
@@ -8677,9 +7556,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_thread_safe as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_thread_safe as *const _ as usize },
         488usize,
         concat!(
             "Offset of field: ",
@@ -8689,9 +7566,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_warning_count as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_warning_count as *const _ as usize },
         496usize,
         concat!(
             "Offset of field: ",
@@ -8711,9 +7586,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_server_init as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_server_init as *const _ as usize },
         512usize,
         concat!(
             "Offset of field: ",
@@ -8743,9 +7616,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_thread_init as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_thread_init as *const _ as usize },
         536usize,
         concat!(
             "Offset of field: ",
@@ -8755,9 +7626,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_set_server_option as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_set_server_option as *const _ as usize },
         544usize,
         concat!(
             "Offset of field: ",
@@ -8767,9 +7636,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_client_info as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_client_info as *const _ as usize },
         552usize,
         concat!(
             "Offset of field: ",
@@ -8779,9 +7646,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_client_version as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_client_version as *const _ as usize },
         560usize,
         concat!(
             "Offset of field: ",
@@ -8791,9 +7656,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_connection as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_connection as *const _ as usize },
         568usize,
         concat!(
             "Offset of field: ",
@@ -8803,9 +7666,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_server_name as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_server_name as *const _ as usize },
         576usize,
         concat!(
             "Offset of field: ",
@@ -8815,10 +7676,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_get_charset_by_name as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_get_charset_by_name as *const _ as usize },
         584usize,
         concat!(
             "Offset of field: ",
@@ -8828,10 +7686,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_get_charset_by_nr as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_get_charset_by_nr as *const _ as usize },
         592usize,
         concat!(
             "Offset of field: ",
@@ -8841,9 +7696,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_convert_string as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_convert_string as *const _ as usize },
         600usize,
         concat!(
             "Offset of field: ",
@@ -8863,9 +7716,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_optionv as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_optionv as *const _ as usize },
         616usize,
         concat!(
             "Offset of field: ",
@@ -8905,9 +7756,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_timeout_value as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_timeout_value as *const _ as usize },
         648usize,
         concat!(
             "Offset of field: ",
@@ -8917,10 +7766,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_timeout_value_ms as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_get_timeout_value_ms as *const _ as usize },
         656usize,
         concat!(
             "Offset of field: ",
@@ -8930,9 +7776,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_reconnect as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_reconnect as *const _ as usize },
         664usize,
         concat!(
             "Offset of field: ",
@@ -8952,9 +7796,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_prepare as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_prepare as *const _ as usize },
         680usize,
         concat!(
             "Offset of field: ",
@@ -8964,9 +7806,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_execute as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_execute as *const _ as usize },
         688usize,
         concat!(
             "Offset of field: ",
@@ -8986,9 +7826,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_fetch_column as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_fetch_column as *const _ as usize },
         704usize,
         concat!(
             "Offset of field: ",
@@ -8998,9 +7836,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_store_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_store_result as *const _ as usize },
         712usize,
         concat!(
             "Offset of field: ",
@@ -9010,9 +7846,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_param_count as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_param_count as *const _ as usize },
         720usize,
         concat!(
             "Offset of field: ",
@@ -9022,9 +7856,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_attr_set as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_attr_set as *const _ as usize },
         728usize,
         concat!(
             "Offset of field: ",
@@ -9034,9 +7866,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_attr_get as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_attr_get as *const _ as usize },
         736usize,
         concat!(
             "Offset of field: ",
@@ -9046,9 +7876,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_bind_param as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_bind_param as *const _ as usize },
         744usize,
         concat!(
             "Offset of field: ",
@@ -9058,9 +7886,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_bind_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_bind_result as *const _ as usize },
         752usize,
         concat!(
             "Offset of field: ",
@@ -9090,9 +7916,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_free_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_free_result as *const _ as usize },
         776usize,
         concat!(
             "Offset of field: ",
@@ -9102,10 +7926,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_send_long_data as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_send_long_data as *const _ as usize },
         784usize,
         concat!(
             "Offset of field: ",
@@ -9115,10 +7936,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_result_metadata as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_result_metadata as *const _ as usize },
         792usize,
         concat!(
             "Offset of field: ",
@@ -9128,10 +7946,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_param_metadata as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_param_metadata as *const _ as usize },
         800usize,
         concat!(
             "Offset of field: ",
@@ -9161,9 +7976,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_sqlstate as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_sqlstate as *const _ as usize },
         824usize,
         concat!(
             "Offset of field: ",
@@ -9173,9 +7986,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_row_seek as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_row_seek as *const _ as usize },
         832usize,
         concat!(
             "Offset of field: ",
@@ -9185,9 +7996,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_row_tell as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_row_tell as *const _ as usize },
         840usize,
         concat!(
             "Offset of field: ",
@@ -9197,9 +8006,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_data_seek as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_data_seek as *const _ as usize },
         848usize,
         concat!(
             "Offset of field: ",
@@ -9209,9 +8016,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_num_rows as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_num_rows as *const _ as usize },
         856usize,
         concat!(
             "Offset of field: ",
@@ -9221,9 +8026,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_affected_rows as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_affected_rows as *const _ as usize },
         864usize,
         concat!(
             "Offset of field: ",
@@ -9233,9 +8036,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_insert_id as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_insert_id as *const _ as usize },
         872usize,
         concat!(
             "Offset of field: ",
@@ -9245,9 +8046,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_field_count as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_field_count as *const _ as usize },
         880usize,
         concat!(
             "Offset of field: ",
@@ -9257,9 +8056,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_next_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_next_result as *const _ as usize },
         888usize,
         concat!(
             "Offset of field: ",
@@ -9269,9 +8066,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_more_results as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_stmt_more_results as *const _ as usize },
         896usize,
         concat!(
             "Offset of field: ",
@@ -9281,10 +8076,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_stmt_execute_direct as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mariadb_stmt_execute_direct as *const _ as usize },
         904usize,
         concat!(
             "Offset of field: ",
@@ -9294,9 +8086,7 @@ fn bindgen_test_layout_st_mariadb_api() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_api>())).mysql_reset_connection as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_api>())).mysql_reset_connection as *const _ as usize },
         912usize,
         concat!(
             "Offset of field: ",
@@ -9333,8 +8123,7 @@ pub struct st_mariadb_methods {
         ) -> ::std::os::raw::c_int,
     >,
     pub db_skip_result: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL)>,
-    pub db_read_query_result:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
+    pub db_read_query_result: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
     pub db_read_rows: ::std::option::Option<
         unsafe extern "C" fn(
             mysql: *mut MYSQL,
@@ -9350,32 +8139,20 @@ pub struct st_mariadb_methods {
             lengths: *mut ::std::os::raw::c_ulong,
         ) -> ::std::os::raw::c_int,
     >,
-    pub db_supported_buffer_type:
-        ::std::option::Option<unsafe extern "C" fn(type_: enum_field_types) -> my_bool>,
-    pub db_read_prepare_response:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
-    pub db_read_stmt_result:
-        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
-    pub db_stmt_get_result_metadata:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
-    pub db_stmt_get_param_metadata:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
+    pub db_supported_buffer_type: ::std::option::Option<unsafe extern "C" fn(type_: enum_field_types) -> my_bool>,
+    pub db_read_prepare_response: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
+    pub db_read_stmt_result: ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL) -> ::std::os::raw::c_int>,
+    pub db_stmt_get_result_metadata: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
+    pub db_stmt_get_param_metadata: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> my_bool>,
     pub db_stmt_read_all_rows:
         ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT) -> ::std::os::raw::c_int>,
     pub db_stmt_fetch: ::std::option::Option<
-        unsafe extern "C" fn(
-            stmt: *mut MYSQL_STMT,
-            row: *mut *mut ::std::os::raw::c_uchar,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(stmt: *mut MYSQL_STMT, row: *mut *mut ::std::os::raw::c_uchar) -> ::std::os::raw::c_int,
     >,
     pub db_stmt_fetch_to_bind: ::std::option::Option<
-        unsafe extern "C" fn(
-            stmt: *mut MYSQL_STMT,
-            row: *mut ::std::os::raw::c_uchar,
-        ) -> ::std::os::raw::c_int,
+        unsafe extern "C" fn(stmt: *mut MYSQL_STMT, row: *mut ::std::os::raw::c_uchar) -> ::std::os::raw::c_int,
     >,
-    pub db_stmt_flush_unbuffered:
-        ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT)>,
+    pub db_stmt_flush_unbuffered: ::std::option::Option<unsafe extern "C" fn(stmt: *mut MYSQL_STMT)>,
     pub set_error: ::std::option::Option<
         unsafe extern "C" fn(
             mysql: *mut MYSQL,
@@ -9385,9 +8162,8 @@ pub struct st_mariadb_methods {
             ...
         ),
     >,
-    pub invalidate_stmts: ::std::option::Option<
-        unsafe extern "C" fn(mysql: *mut MYSQL, function_name: *const ::std::os::raw::c_char),
-    >,
+    pub invalidate_stmts:
+        ::std::option::Option<unsafe extern "C" fn(mysql: *mut MYSQL, function_name: *const ::std::os::raw::c_char)>,
     pub api: *mut st_mariadb_api,
 }
 #[test]
@@ -9433,9 +8209,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_skip_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_skip_result as *const _ as usize },
         24usize,
         concat!(
             "Offset of field: ",
@@ -9445,9 +8219,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_read_query_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_read_query_result as *const _ as usize },
         32usize,
         concat!(
             "Offset of field: ",
@@ -9467,9 +8239,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_read_one_row as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_read_one_row as *const _ as usize },
         48usize,
         concat!(
             "Offset of field: ",
@@ -9479,10 +8249,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_supported_buffer_type as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_supported_buffer_type as *const _ as usize },
         56usize,
         concat!(
             "Offset of field: ",
@@ -9492,10 +8259,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_read_prepare_response as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_read_prepare_response as *const _ as usize },
         64usize,
         concat!(
             "Offset of field: ",
@@ -9505,9 +8269,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_read_stmt_result as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_read_stmt_result as *const _ as usize },
         72usize,
         concat!(
             "Offset of field: ",
@@ -9517,10 +8279,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_get_result_metadata as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_get_result_metadata as *const _ as usize },
         80usize,
         concat!(
             "Offset of field: ",
@@ -9530,10 +8289,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_get_param_metadata as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_get_param_metadata as *const _ as usize },
         88usize,
         concat!(
             "Offset of field: ",
@@ -9543,10 +8299,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_read_all_rows as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_read_all_rows as *const _ as usize },
         96usize,
         concat!(
             "Offset of field: ",
@@ -9556,9 +8309,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_fetch as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_fetch as *const _ as usize },
         104usize,
         concat!(
             "Offset of field: ",
@@ -9568,10 +8319,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_fetch_to_bind as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_fetch_to_bind as *const _ as usize },
         112usize,
         concat!(
             "Offset of field: ",
@@ -9581,10 +8329,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_flush_unbuffered as *const _
-                as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).db_stmt_flush_unbuffered as *const _ as usize },
         120usize,
         concat!(
             "Offset of field: ",
@@ -9604,9 +8349,7 @@ fn bindgen_test_layout_st_mariadb_methods() {
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<st_mariadb_methods>())).invalidate_stmts as *const _ as usize
-        },
+        unsafe { &(*(::std::ptr::null::<st_mariadb_methods>())).invalidate_stmts as *const _ as usize },
         136usize,
         concat!(
             "Offset of field: ",
