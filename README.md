@@ -78,7 +78,7 @@ listed at section <a href="#build" > <span style="font-size: 12pt"> Build</span>
 # ...
 
 [dependencies]
-mysql-client-bindings-rs = { version = "0.1.0", git = "https://github.com/chamoretto/mysql-client-bindings-rs" }
+mysql-client-bindings-rs = { version = "0.1.2" }
 ```
 
 Then add `use`,  it would be wise to use a shorter alias:
