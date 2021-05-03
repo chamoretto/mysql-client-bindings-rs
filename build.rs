@@ -1,21 +1,31 @@
-extern crate bindgen;
-
-use std::env;
-use std::path::PathBuf;
-
-#[cfg(all(feature = "mysql", not(feature = "mariadb")))]
+#[cfg(all(feature = "fresh_bindings", feature = "mysql", not(feature = "mariadb")))]
 mod constants {
     pub(crate) const FILE_NAME: &str = "src/mysql.rs";
     pub(crate) const BINDGEN_EXTRA_CLANG_ARGS: &str = r#"-I"/usr/include/mysql""#;
 }
 
-#[cfg(all(feature = "mariadb", not(feature = "mysql")))]
+#[cfg(all(feature = "fresh_bindings", feature = "mariadb", not(feature = "mysql")))]
 mod constants {
     pub(crate) const FILE_NAME: &str = "src/mariadb.rs";
     pub(crate) const BINDGEN_EXTRA_CLANG_ARGS: &str = r#"-I"/usr/include/mariadb""#;
 }
 
 fn main() {
+    #[cfg(all(feature = "fresh_bindings", feature = "bindgen"))]
+    build();
+}
+
+#[cfg(any(
+    all(not(feature = "fresh_bindings"), feature = "bindgen"),
+    all(feature = "fresh_bindings", not(feature = "bindgen"))
+))]
+compile_error!("Features `fresh_bindings` and `bindgen` must be enabled ONLY together!");
+
+#[cfg(all(feature = "fresh_bindings", feature = "bindgen"))]
+fn build() {
+    use std::env;
+    use std::path::PathBuf;
+
     // Tell cargo to tell rustc to link the mysql or mariadb shared library.
     println!("{}", format!("cargo:rustc-link-lib={}", "mysqlclient"));
 
